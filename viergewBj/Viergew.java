@@ -3,7 +3,8 @@ public class Viergew
 {
     int[][] game = new int[7][6];
     int turn = 0;
-
+    ArrayList<Integer> history=new ArrayList<Integer>();
+    
     public Viergew()
     {
         for (int x = 0; x < game.length; x++)
@@ -12,14 +13,17 @@ public class Viergew
         }
     }
 
-    public void setOn(int num)
+    public boolean setOn(int num)
     {
         int pos=setPos(num);
         if(pos!=-1)
         {
+            history.add(num);
             game[num][pos] = turn % 2 + 1;
             turn++;
+            return true;
         }
+        return false;
     }
 
     public int setPos(int num)
@@ -136,50 +140,30 @@ public class Viergew
         {
             for (int x = 0; x < game.length; x++)
             {
-                System.out.print(game[x][y]);
+                System.out.print(game[x][y]==0?'-':game[x][y]==1?'X':'O');
             }
             System.out.println();
         }
     }
 
-    public int aiTurn()
+    public int ai()
     {
-        final int sp=turn%2+1;
-        final Viergew vG=this;
-        ArrayList<Integer> watch=turn(vG,sp);
-        if(!watch.isEmpty())
-        {
-            int num = (int)(Math.random() * watch.size()); 
-            return watch.get(num);
-        }
-        
-        return -1;
+        Ai a=new Ai(turn,history);
+        return a.aiTurn();
     }
-    
-    private ArrayList<Integer> ai(final Viergew save,final int sp)
+
+    public int getTurns()
     {
-        ArrayList<Integer> watch=turn(save,sp);
-        if(watch.isEmpty())
-        {
-            
-        }
-        int num = (int)(Math.random() * watch.size()); 
-        return watch;
+        return turn;   
     }
-    
-    private ArrayList<Integer> turn(final Viergew save,int sp)
+
+    public int getHeight()
     {
-        ArrayList<Integer> winchoice=new ArrayList<Integer>();
-        Viergew test=save;
-        for(int i=0;i<game.length;i++)
-        {
-            test.setOn(i);
-            if(test.checkwinner()==sp)
-            {
-                winchoice.add(i);
-            }
-            test=save;
-        }
-        return winchoice;
+        return game[0].length;   
+    }
+
+    public int getWidth()
+    {
+        return game.length;   
     }
 }
