@@ -1,5 +1,4 @@
-import java.util.Arrays;
-
+import java.util.*;
 public class Viergew
 {
     int[][] game = new int[7][6];
@@ -141,5 +140,46 @@ public class Viergew
             }
             System.out.println();
         }
+    }
+
+    public int aiTurn()
+    {
+        final int sp=turn%2+1;
+        final Viergew vG=this;
+        ArrayList<Integer> watch=turn(vG,sp);
+        if(!watch.isEmpty())
+        {
+            int num = (int)(Math.random() * watch.size()); 
+            return watch.get(num);
+        }
+        
+        return -1;
+    }
+    
+    private ArrayList<Integer> ai(final Viergew save,final int sp)
+    {
+        ArrayList<Integer> watch=turn(save,sp);
+        if(watch.isEmpty())
+        {
+            
+        }
+        int num = (int)(Math.random() * watch.size()); 
+        return watch;
+    }
+    
+    private ArrayList<Integer> turn(final Viergew save,int sp)
+    {
+        ArrayList<Integer> winchoice=new ArrayList<Integer>();
+        Viergew test=save;
+        for(int i=0;i<game.length;i++)
+        {
+            test.setOn(i);
+            if(test.checkwinner()==sp)
+            {
+                winchoice.add(i);
+            }
+            test=save;
+        }
+        return winchoice;
     }
 }
