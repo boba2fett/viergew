@@ -1,3 +1,8 @@
 \babel@toc {ngerman}{}
-\contentsline {section}{\numberline {1}}{2}
-\contentsline {subsection}{\numberline {1.1}}{2}
+\contentsline {section}{\numberline {1}Vier Gewinnt}{2}
+\contentsline {subsection}{\numberline {1.1}Spielidee}{2}
+\contentsline {section}{\numberline {2}Implementation der KI}{2}
+\contentsline {subsection}{\numberline {2.1}Taktik des NPCs}{2}
+\contentsline {subsection}{\numberline {2.2}Schw\IeC {\"a}chen}{2}
+\contentsline {section}{\numberline {3}Aktueller Stand}{2}
+\contentsline {section}{\numberline {4}Ausblick}{2}

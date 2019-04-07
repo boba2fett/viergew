@@ -1,42 +1,39 @@
 import java.util.*;
-public class Game
+public class Game3
 {
     Viergew vier;
     public static void main(String args[])
     {
-        Game g=new Game();
+        Game3 g=new Game3();
         g.start();
     }
 
-    public Game()
+    public Game3()
     {
         vier=new Viergew();
     }
 
     public void start()
     {
-        System.out.println("Willkomen");
-        vier.out();
-        System.out.println("0123456");
         do{
-            int num;
+            vier=new Viergew();
             do{
-                num=numIn("Worauf setzen?");
-            }while(vier.setPos(num)==-1);
-            vier.setOn(num);
-            System.out.println();
-            vier.out();
-            System.out.println("0123456");
-            System.out.println("ai: "+vier.ai());
-        }while(vier.checkwinner()==-1);
-        if(vier.checkwinner()==0)
-        {
-            System.out.println("Unentschieden");
-        }
-        else
-        {
-            System.out.println("Spieler "+vier.checkwinner()+" hat gewonnen");
-        }
+                if(!vier.setOn(vier.ai()))
+                {
+                    System.out.println("FAIL");
+                    return;
+                }
+            }while(vier.checkwinner()==-1);
+            if(vier.checkwinner()==0)
+            {
+                System.out.println("Unentschieden");
+            }
+            else
+            {
+                System.out.println("Spieler "+vier.checkwinner()+" hat gewonnen");
+            }
+        }while(true);
+
     }
 
     private boolean isNum(String num)

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Ai2
+comment1.params=pturn\ phistory
+comment1.target=Ai2(int,\ java.util.ArrayList)
+comment2.params=further
+comment2.target=Viergew\ recreate(java.util.ArrayList)
+comment3.params=
+comment3.target=int\ aiTurn()
+comment4.params=
+comment4.target=void\ beginGeneration()
+comment5.params=n\ hist
+comment5.target=void\ generateNodes(Node,\ java.util.ArrayList)
+numComments=6
