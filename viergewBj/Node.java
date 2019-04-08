@@ -55,4 +55,9 @@ public class Node
         {
             return childnodes;
         }
+        
+        public void setTerminal()
+        {
+            terminal=true;
+        }
     }

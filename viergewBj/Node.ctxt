@@ -2,6 +2,8 @@
 comment0.target=Node
 comment1.params=pvalue
 comment1.target=Node(int)
+comment10.params=
+comment10.target=void\ setTerminal()
 comment2.params=
 comment2.target=Node()
 comment3.params=pnum\ pvalue
@@ -18,4 +20,4 @@ comment8.params=
 comment8.target=int\ value()
 comment9.params=
 comment9.target=java.util.ArrayList\ childnodes()
-numComments=10
+numComments=11

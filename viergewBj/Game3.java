@@ -16,19 +16,17 @@ public class Game3
     public void start()
     {
         System.out.println("Willkomen");
-        vier.out();
-        System.out.println("0123456");
-        System.out.println("ai: "+vier.ai());
         do{
+            vier.out();
+            System.out.println("0123456");
+            System.out.println("ai: "+vier.ai());
             int num;
             do{
+                System.out.println(vier.getTurns()%2+1==1?'X':'O');
                 num=numIn("Worauf setzen?");
             }while(vier.setPos(num)==-1);
             vier.setOn(num);
             System.out.println();
-            vier.out();
-            System.out.println("0123456");
-            System.out.println("ai: "+vier.ai());
         }while(vier.checkwinner()==-1);
         if(vier.checkwinner()==0)
         {

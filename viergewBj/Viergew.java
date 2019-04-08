@@ -149,7 +149,7 @@ public class Viergew
 
     public int ai()
     {
-        Ai2 a=new Ai2(turn,history);
+        Ai2 a=new Ai2(turn,(ArrayList<Integer>)history.clone());
         aa=a;
         return a.aiTurn();
     }
