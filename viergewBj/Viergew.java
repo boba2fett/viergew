@@ -4,6 +4,7 @@ public class Viergew
     int[][] game = new int[7][6];
     int turn = 0;
     ArrayList<Integer> history=new ArrayList<Integer>();
+    Ai2 aa;
     
     public Viergew()
     {
@@ -148,7 +149,8 @@ public class Viergew
 
     public int ai()
     {
-        Ai a=new Ai(turn,history);
+        Ai2 a=new Ai2(turn,history);
+        aa=a;
         return a.aiTurn();
     }
 
@@ -157,7 +159,7 @@ public class Viergew
         return turn;   
     }
 
-    public int getHeight()
+    /*public int getHeight()
     {
         return game[0].length;   
     }
@@ -165,5 +167,5 @@ public class Viergew
     public int getWidth()
     {
         return game.length;   
-    }
+    }*/
 }
