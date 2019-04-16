@@ -1,25 +1,25 @@
 import java.util.*;
-public class Game3
+public class Game1v1
 {
     Viergew vier;
     public static void main(String args[])
     {
-        Game3 g=new Game3();
+        Game1v1 g=new Game1v1();
         g.start();
     }
 
-    public Game3()
+    public Game1v1()
     {
         vier=new Viergew();
     }
 
     public void start()
     {
-        System.out.println("Willkomen");
+        System.out.println("Willkommen\n('x' beendet immer)");
         do{
             vier.out();
             System.out.println("0123456");
-            System.out.println("ai: "+vier.ai());
+            //System.out.println("ai: "+vier.ai());//Ai hints
             int num;
             do{
                 System.out.println(vier.getTurns()%2+1==1?'X':'O');
@@ -28,6 +28,8 @@ public class Game3
             vier.setOn(num);
             System.out.println();
         }while(vier.checkwinner()==-1);
+        vier.out();
+        System.out.println("0123456");
         if(vier.checkwinner()==0)
         {
             System.out.println("Unentschieden");
@@ -56,6 +58,11 @@ public class Game3
         System.out.println(out);
         do{
             in=scann.nextLine();
+            if(in.indexOf('x')!=-1)
+            {
+                System.out.println("Bye Bye!");
+                System.exit(0);
+            }
         }while(!isNum(in));
         int num=Integer.parseInt(in);
         return num;

@@ -1,14 +1,14 @@
 import java.util.*;
-public class Game4
+public class GameAuto
 {
     Viergew vier;
     public static void main(String args[])
     {
-        Game4 g=new Game4();
+        GameAuto g=new GameAuto();
         g.start();
     }
 
-    public Game4()
+    public GameAuto()
     {
         vier=new Viergew();
     }
@@ -48,28 +48,5 @@ public class Game4
         }
         System.out.println("Spieler1 "+wins1);
         System.out.println("Spieler2 "+wins2);
-    }
-
-    private boolean isNum(String num)
-    {
-        try{
-            Integer.parseInt(num);
-            return true;
-        }catch(NumberFormatException e){
-            System.out.println("bitte eine zahl verwenden");
-            return false;
-        }
-    }
-
-    private int numIn(String out)
-    {
-        Scanner scann=new Scanner(System.in);
-        String in;
-        System.out.println(out);
-        do{
-            in=scann.nextLine();
-        }while(!isNum(in));
-        int num=Integer.parseInt(in);
-        return num;
     }
 }

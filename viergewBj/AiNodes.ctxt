@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.target=Ai2
-comment1.params=pturn\ phistory
-comment1.target=Ai2(int,\ java.util.ArrayList)
+comment0.target=AiNodes
+comment1.params=turn\ history\ width
+comment1.target=AiNodes(int,\ java.util.ArrayList,\ int)
 comment10.params=node\ maximizingPlayer
 comment10.target=int\ minimax(Node,\ boolean)
 comment11.params=

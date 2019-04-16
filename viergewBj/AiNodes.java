@@ -1,13 +1,15 @@
 import java.util.*;
-public class Ai2
+public class AiNodes
 {
     final int turn;
     final ArrayList<Integer> history;
+    final int w;
     Node beginn;
-    public Ai2(int pturn,ArrayList<Integer> phistory)
+    public AiNodes(int turn,ArrayList<Integer> history,int width)
     {
-        turn=pturn;
-        history=phistory;
+        this.turn=turn;
+        this.history=history;
+        w=width;
     }
 
     class outstandingMoveException extends Exception
@@ -87,7 +89,7 @@ public class Ai2
         final int gsp=(1+turn)%2+1;
         Viergew test;
 
-        for(int i=0;i<7;i++)
+        for(int i=0;i<w;i++)
         {
             test=recreate(new ArrayList<Integer>());
             if(test.setOn(i))
@@ -128,7 +130,7 @@ public class Ai2
         final int sp=turn%2+1;
         final int gsp=(1+turn)%2+1;
         Viergew test;
-        for(int i=0;i<7;i++)
+        for(int i=0;i<w;i++)
         {
             test=recreate(hist);
             if(test.setOn(i))
@@ -165,7 +167,7 @@ public class Ai2
         final int gsp=(1+turn)%2+1;
         Viergew test;
 
-        for(int i=0;i<7;i++)
+        for(int i=0;i<w;i++)
         {
             test=recreate(new ArrayList<Integer>());
             if(test.setOn(i))
@@ -211,7 +213,7 @@ public class Ai2
         final int sp=turn%2+1;
         final int gsp=(1+turn)%2+1;
         Viergew test;
-        for(int i=0;i<7;i++)
+        for(int i=0;i<w;i++)
         {
             test=recreate(hist);
             if(test.setOn(i))
@@ -297,7 +299,7 @@ public class Ai2
     {
         ArrayList<Integer> poss=new ArrayList<Integer>();
         Viergew test;
-        for(int i=0;i<7;i++)
+        for(int i=0;i<w;i++)
         {
             test=recreate(new ArrayList<Integer>());
             if(test.setOn(i))
@@ -322,7 +324,7 @@ public class Ai2
         {
             value = -2;
 
-            for(int i=0;i<7;i++)
+            for(int i=0;i<w;i++)
             {
                 test=recreate(hist);
 
@@ -352,7 +354,7 @@ public class Ai2
         else
         {
             value = 2;
-            for(int i=0;i<7;i++)
+            for(int i=0;i<w;i++)
             {
                 test=recreate(hist);
                 if(test.setOn(i))
@@ -391,13 +393,13 @@ public class Ai2
         int num;
         for(int i=2;i>=-2;i--)
         {
-            for(int j=0;j<7;j++)
+            for(int j=0;j<w;j++)
             {
                 ArrayList<Integer> hist=new ArrayList<Integer>();
                 hist.add(j);
                 try{
                 recreate2(hist);
-                if(minimax2(false,hist,50)==i)
+                if(minimax2(false,hist,6)==i)
                 {
                     whynot.add(j);
                 }

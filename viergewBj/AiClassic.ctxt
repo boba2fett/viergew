@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.target=Ai
+comment0.target=AiClassic
 comment1.params=pturn\ phistory
-comment1.target=Ai(int,\ java.util.ArrayList)
+comment1.target=AiClassic(int,\ java.util.ArrayList)
 comment10.params=hist\ ignore
 comment10.target=java.util.ArrayList\ nextTurnsDont(java.util.ArrayList,\ java.util.ArrayList)
 comment2.params=further

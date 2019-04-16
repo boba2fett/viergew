@@ -1,11 +1,12 @@
 import java.util.*;
 public class Viergew
 {
-    int[][] game = new int[7][6];
+    final int w=7;
+    final int h=6;
+    int[][] game = new int[w][h];
     int turn = 0;
     ArrayList<Integer> history=new ArrayList<Integer>();
-    Ai2 aa;
-    
+
     public Viergew()
     {
         for (int x = 0; x < game.length; x++)
@@ -149,8 +150,7 @@ public class Viergew
 
     public int ai()
     {
-        Ai2 a=new Ai2(turn,(ArrayList<Integer>)history.clone());
-        aa=a;
+        AiMinimax a=new AiMinimax(turn,(ArrayList<Integer>)history.clone(),w);
         return a.aiTurn();
     }
 
@@ -159,13 +159,13 @@ public class Viergew
         return turn;   
     }
 
-    /*public int getHeight()
+    public int getHeight()
     {
-        return game[0].length;   
+        return h;   
     }
 
     public int getWidth()
     {
-        return game.length;   
-    }*/
+        return w;
+    }
 }

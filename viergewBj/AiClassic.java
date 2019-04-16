@@ -1,9 +1,9 @@
 import java.util.*;
-public class Ai
+public class AiClassic
 {
     final int turn;
     final ArrayList<Integer> history;
-    public Ai(int pturn,ArrayList<Integer> phistory)
+    public AiClassic(int pturn,ArrayList<Integer> phistory)
     {
         turn=pturn;
         history=phistory;

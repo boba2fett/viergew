@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=AiMinimax
+comment1.params=turn\ history\ width
+comment1.target=AiMinimax(int,\ java.util.ArrayList,\ int)
+comment2.params=further
+comment2.target=Viergew\ recreate2(java.util.ArrayList)
+comment3.params=further
+comment3.target=Viergew\ recreate(java.util.ArrayList)
+comment4.params=
+comment4.target=java.util.ArrayList\ possible()
+comment5.params=maximizingPlayer\ hist\ depth
+comment5.target=int\ minimax(boolean,\ java.util.ArrayList,\ int)
+comment6.params=
+comment6.target=int\ aiTurn()
+numComments=7
