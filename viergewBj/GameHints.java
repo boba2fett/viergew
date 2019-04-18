@@ -16,6 +16,10 @@ public class GameHints
     public void start()
     {
         System.out.println("Willkommen\n('x' beendet immer)");
+        int sp;
+        do{
+            sp=numIn("KI ist Spieler 1 oder 2?");
+        }while(sp<1||sp>2);
         do{
             vier.out();
             System.out.println("0123456");
@@ -23,7 +27,7 @@ public class GameHints
             int num;
             do{
                 System.out.println(vier.getTurns()%2+1==1?'X':'O');
-                if(vier.getTurns()%2+1==2)
+                if(vier.getTurns()%2+1==sp)
                 {
                     num=vier.ai();
                     System.out.println(": "+num);

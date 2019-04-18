@@ -4,7 +4,6 @@ public class AiMinimax
     final int turn;
     final ArrayList<Integer> history;
     final int w;
-    final int deepness=5;
     public AiMinimax(int turn,ArrayList<Integer> history,int width)
     {
         this.turn=turn;
@@ -49,6 +48,18 @@ public class AiMinimax
         }
         return vier;
     }
+    
+    public Viergew recreate(int further)
+    {
+        ArrayList<Integer> history2=(ArrayList<Integer>)history.clone();
+        history2.add(further);
+        Viergew vier=new Viergew();
+        for (int num : history2)
+        {
+            vier.setOn(num);
+        }
+        return vier;
+    }
 
     private ArrayList<Integer> possible()
     {
@@ -77,7 +88,7 @@ public class AiMinimax
         }
         if(maximizingPlayer)
         {
-            value = -2;
+            value = -50;
 
             for(int i=0;i<w;i++)
             {
@@ -97,18 +108,18 @@ public class AiMinimax
                     }
                     if(test.checkwinner()==sp)
                     {
-                        value = Math.max(value, 1);
+                        value = Math.max(value, depth);
                     }
                     if(test.checkwinner()==gsp)
                     {
-                        value = Math.max(value, -1);
+                        value = Math.max(value, -depth);
                     }
                 }
             }
         }
         else
         {
-            value = 2;
+            value = 50;
             for(int i=0;i<w;i++)
             {
                 test=recreate(hist);
@@ -126,11 +137,11 @@ public class AiMinimax
                     }
                     if(test.checkwinner()==sp)
                     {
-                        value = Math.min(value, 1);
+                        value = Math.min(value, depth);
                     }
                     if(test.checkwinner()==gsp)
                     {
-                        value = Math.min(value, -1);
+                        value = Math.min(value, -depth);
                     }
                 }
             }
@@ -140,37 +151,45 @@ public class AiMinimax
 
     public int aiTurn()
     {
+        final int deepness=6;
         if(turn==0)
         {
             return 3;
         }
+
+        int[]eval=new int[w];
+        boolean[]use=new boolean[w];
+        for(int j=0;j<w;j++)
+        {
+            ArrayList<Integer> hist=new ArrayList<Integer>();
+            hist.add(j);
+            try{
+                recreate2(hist);
+                eval[j]=minimax(false,hist,deepness);
+                use[j]=true;
+            }
+            catch(outstandingMoveException e)
+            {use[j]=false;}
+        }
+
         ArrayList<Integer> whynot=new ArrayList<Integer>();
-        int num;
-        for(int i=2;i>=-2;i--)
+        for(int i=deepness;i>=-deepness;i--)
         {
             for(int j=0;j<w;j++)
             {
-                ArrayList<Integer> hist=new ArrayList<Integer>();
-                hist.add(j);
-                try{
-                recreate2(hist);
-                if(minimax(false,hist,deepness)==i)
+                if(use[j]&&eval[j]==i)
                 {
                     whynot.add(j);
                 }
             }
-            catch(outstandingMoveException e)
-            {}
-            }
-            num = (int)(Math.random() * whynot.size());
             if(whynot.size()!=0)
             {
+                int num = (int)(Math.random() * whynot.size());
                 return whynot.get(num);
             }
         }
         whynot=possible();
-        num = (int)(Math.random() * whynot.size());
+        int num = (int)(Math.random() * whynot.size());
         return whynot.get(num);
-
     }
 }
