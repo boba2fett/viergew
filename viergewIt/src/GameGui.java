@@ -4,7 +4,6 @@ import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.lang.Math;
 import javax.swing.*;
 
 public class GameGui extends JFrame {
@@ -13,12 +12,12 @@ public class GameGui extends JFrame {
         new GameGui();        //main method and instantiating tic tac object and calling initialize function
     }
 
-    VierGame v;
-    boolean ready=false;
-    int players;
-    int w;
-    int h;
-    int ki=0;
+    private VierGame v;
+    private boolean ready=false;
+    private int players;
+    private int w;
+    private int h;
+    private int ki=0;
 
     private JFrame frame = new JFrame("VierGewinnt");
 
@@ -34,7 +33,7 @@ public class GameGui extends JFrame {
     private JButton reset = new JButton("Reset");
 
     private JPanel jout = new JPanel(new GridLayout());
-    private JTextField tf = new JTextField();//output for text
+    //private JTextField tf = new JTextField();//output for text
     private JLabel jl = new JLabel("");
 
     private JPanel mainPanel = new JPanel(new BorderLayout());//create main panel container to put layer others on top
@@ -319,14 +318,12 @@ public class GameGui extends JFrame {
         {
             jl.setText("Unentschieden");
             block();
-            return;
         }
         if(win>0)
         {
             jl.setText("Spieler "+(win==1?"X":"O")+" hat gewonnen");
             markWin();
             block();
-            return;
         }
     }
 
