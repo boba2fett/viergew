@@ -1,14 +1,39 @@
 import java.util.*;
-class AiMiniMax
+class Test
 {
+    public static void main(String args[])
+    {
+        Test t=new Test(0,new ArrayList<Integer>(),7);
+        t.testing();
+    }
+
     private final int turn;
     private final ArrayList<Integer> history;
     private final int w;
-    AiMiniMax(int turn,ArrayList<Integer> history,int width)
+    Test(int turn,ArrayList<Integer> history,int width)
     {
         this.turn=turn;
         this.history=history;
         w=width;
+    }
+
+    public void testing()
+    {
+        final int deepness=10;
+        int[]eval=new int[w];
+        boolean[]use=new boolean[w];
+        for(int j=0;j<w;j++)
+        {
+            use[j]=legal(j);
+            if(use[j])
+            {
+                ArrayList<Integer> hist=new ArrayList<Integer>();
+                hist.add(j);
+                eval[j]=minimax(false,hist,deepness);
+            }
+        }
+        System.out.println(use);
+        System.out.println(eval);
     }
 
     private boolean legal(int further)
