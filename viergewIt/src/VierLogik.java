@@ -1,31 +1,39 @@
-import java.util.Arrays;
-
-public class Viergew
+public class VierLogik
 {
-    int[][] game = new int[7][6];
+    final int w;
+    final int h;
+    int[][] game;
     int turn = 0;
 
-    public Viergew()
+    VierLogik()
     {
-        for (int x = 0; x < game.length; x++)
-        {
-            Arrays.fill(game[x], 0);
-        }
+        this.w=7;
+        this.h=6;
+        game = new int[w][h];
     }
 
-    public void setOn(int num)
+    VierLogik(int w,int h)
+    {
+        this.w=w;
+        this.h=h;
+        game = new int[w][h];
+    }
+
+    public boolean setOn(int num)
     {
         int pos=setPos(num);
         if(pos!=-1)
         {
             game[num][pos] = turn % 2 + 1;
             turn++;
+            return true;
         }
+        return false;
     }
 
-    public int setPos(int num)
+    int setPos(int num)
     {
-        if (num < 0 || num > 6)
+        if (num < 0 || num > w-1)
         {
             return -1;
         }
@@ -45,7 +53,7 @@ public class Viergew
         return -1;
     }
 
-    public int checkwinner()
+    int checkwinner()
     {
         for (int sp = 1; sp <= 2; sp++)
         {
@@ -67,7 +75,7 @@ public class Viergew
         return -1;
     }
 
-    private boolean checkLines(int x, int y, int sp)
+    boolean checkLines(int x, int y, int sp)
     {
         if (x + 4 > game.length)
         {
@@ -83,7 +91,7 @@ public class Viergew
         return true;
     }
 
-    private boolean checkRows(int x, int y, int sp)
+    boolean checkRows(int x, int y, int sp)
     {
         if (y + 4 > game[x].length)
         {
@@ -99,7 +107,7 @@ public class Viergew
         return true;
     }
 
-    private boolean checkSlash(int x, int y, int sp)
+    boolean checkSlash(int x, int y, int sp)
     {
         if (x + 4 > game.length || y + 4 > game[x].length)
         {
@@ -115,7 +123,7 @@ public class Viergew
         return true;
     }
 
-    private boolean checkBackslash(int x, int y, int sp)
+    boolean checkBackslash(int x, int y, int sp)
     {
         if (x + 4 > game.length || y - 3 < 0)
         {
@@ -129,17 +137,5 @@ public class Viergew
             }
         }
         return true;
-    }
-
-    public void out()
-    {
-        for (int y = 0; y < game[0].length ; y++)
-        {
-            for (int x = 0; x < game.length; x++)
-            {
-                System.out.print(game[x][y]);
-            }
-            System.out.println();
-        }
     }
 }

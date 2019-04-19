@@ -1,19 +1,18 @@
-import java.util.*;
 public class GameAuto
 {
-    VierGame vier;
+    private VierGame vier;
     public static void main(String args[])
     {
         GameAuto g=new GameAuto();
         g.start();
     }
 
-    public GameAuto()
+    private GameAuto()
     {
         vier=new VierGame();
     }
 
-    public void start()
+    private void start()
     {
         int wins1=0;
         int wins2=0;

@@ -1,17 +1,17 @@
 import java.util.*;
-public class AiMinimax
+class AiMiniMax
 {
-    final int turn;
-    final ArrayList<Integer> history;
-    final int w;
-    public AiMinimax(int turn,ArrayList<Integer> history,int width)
+    private final int turn;
+    private final ArrayList<Integer> history;
+    private final int w;
+    AiMiniMax(int turn,ArrayList<Integer> history,int width)
     {
         this.turn=turn;
         this.history=history;
         w=width;
     }
 
-    public boolean legal(int further)
+    private boolean legal(int further)
     {
         VierLogik vier=new VierLogik();
         for (int num : history)
@@ -21,7 +21,7 @@ public class AiMinimax
         return vier.setOn(further);
     }
 
-    public VierLogik recreate(ArrayList<Integer> further)
+    private VierLogik recreate(ArrayList<Integer> further)
     {
         VierLogik vier=new VierLogik();
         for (int num : history)
@@ -32,17 +32,6 @@ public class AiMinimax
         {
             vier.setOn(num);
         }
-        return vier;
-    }
-
-    public VierLogik recreate(int further)
-    {
-        VierLogik vier=new VierLogik();
-        for (int num : history)
-        {
-            vier.setOn(num);
-        }
-        vier.setOn(further);
         return vier;
     }
 
@@ -59,7 +48,7 @@ public class AiMinimax
         return poss;
     }
 
-    public int minimax(boolean maximizingPlayer,ArrayList<Integer> hist,int depth)
+    private int minimax(boolean maximizingPlayer, ArrayList<Integer> hist, int depth)
     {
         if(depth==0)
         {
@@ -132,7 +121,7 @@ public class AiMinimax
         return value;
     }
 
-    public int aiTurn()
+    int aiTurn()
     {
         final int deepness=7;
         int[]eval=new int[w];
