@@ -4,16 +4,19 @@ class AiMiniMax
     private final int turn;
     private final ArrayList<Integer> history;
     private final int w;
-    AiMiniMax(int turn,ArrayList<Integer> history,int width)
+    private final int h;
+
+    AiMiniMax(int turn,ArrayList<Integer> history,int w,int h)
     {
         this.turn=turn;
         this.history=history;
-        w=width;
+        this.w=w;
+        this.h=h;
     }
 
     private boolean legal(int further)
     {
-        VierLogik vier=new VierLogik();
+        VierLogik vier=new VierLogik(w,h);
         for (int num : history)
         {
             vier.setOn(num);
@@ -23,7 +26,7 @@ class AiMiniMax
 
     private VierLogik recreate(ArrayList<Integer> further)
     {
-        VierLogik vier=new VierLogik();
+        VierLogik vier=new VierLogik(w,h);
         for (int num : history)
         {
             vier.setOn(num);
@@ -37,7 +40,7 @@ class AiMiniMax
 
     private VierLogik recreate(int further)
     {
-        VierLogik vier=new VierLogik();
+        VierLogik vier=new VierLogik(w,h);
         for (int num : history)
         {
             vier.setOn(num);
