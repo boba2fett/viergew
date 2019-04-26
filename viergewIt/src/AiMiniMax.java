@@ -138,7 +138,7 @@ class AiMiniMax
 
     int aiTurn()
     {
-        final int deepness=7;
+        final int deepness=w==8?6:7;
         int[]eval=new int[w];
         boolean[]use=new boolean[w];
         for(int j=0;j<w;j++)

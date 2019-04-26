@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.11)  16 APR 2019 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.11)  26 APR 2019 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,18 +397,18 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 (./facharbeit.aux)
 \openout1 = `facharbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -480,11 +480,13 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 12.
+(Font)              <14.4> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 12.
+(Font)              <7> on input line 14.
 
-(./facharbeit.toc
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./facharbeit.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -495,10 +497,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `facharbeit.toc'.
 
- [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-[2] (./facharbeit.aux) ) 
+[2] [1] (./facharbeit.aux) ) 
 Here is how much of TeX's memory you used:
  2519 strings out of 494871
  32297 string characters out of 6178381
@@ -507,18 +507,18 @@ Here is how much of TeX's memory you used:
  13373 words of font info for 34 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,4n,27p,278b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecti1200.600pk> </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecbx1440.600pk> </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecrm1200.600pk> </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecbx1200.600pk> </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecbx1728.600pk> </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecrm1440.600pk> </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecrm2074.600pk>
-Output written on facharbeit.pdf (2 pages, 64252 bytes).
+ </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecti1200.600pk> </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecbx1440.600pk> </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecrm1200.600pk> </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecbx1200.600pk> </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecbx1728.600pk> </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecrm1440.600pk> </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecrm2074.600pk>
+Output written on facharbeit.pdf (3 pages, 64622 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 231 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
