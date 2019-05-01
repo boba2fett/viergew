@@ -21,10 +21,9 @@ public class GameGui extends JFrame {
 
     private JFrame frame = new JFrame("VierGewinnt");
 
-    private JButton f7x6 = new JButton("7x6");
-    private JButton f8x8 = new JButton("8x8");
+    private JButton[][] fields;
 
-    private JButton player0 = new JButton("0 Spieler");
+    //private JButton player0 = new JButton("0 Spieler");
     private JButton player1ki1 = new JButton("1 Spieler KI ist 1");
     private JButton player1ki2 = new JButton("1 Spieler KI ist 2");
     private JButton player2 = new JButton("2 Spieler");//buttons for decisions
@@ -37,7 +36,7 @@ public class GameGui extends JFrame {
     private JLabel jl = new JLabel("");
 
     private JPanel mainPanel = new JPanel(new BorderLayout());//create main panel container to put layer others on top
-    private JPanel menu = new JPanel(new GridLayout(1, 3));//panel for buttons for decisions
+    private JPanel menu;//panel for buttons for decisions
     private JPanel game;//Create two more panels with layouts for buttons
 
     private JButton[][] buttons;
@@ -54,21 +53,39 @@ public class GameGui extends JFrame {
     private void initialize()             //Initialize gui
     {
         frame.add(mainPanel);                                         //add main container panel to frame
-        mainPanel.setPreferredSize(new Dimension(1000, 1000));
-        menu.setPreferredSize(new Dimension(1000, 100));                     //Setting dimensions of panels
+        mainPanel.setPreferredSize(new Dimension(1000, 1000));//Setting dimensions of panels
         jout.setPreferredSize(new Dimension(1000, 100));
-        mainPanel.add(menu, BorderLayout.NORTH);                   //Add three panels to the main container panel
+        //mainPanel.add(menu, BorderLayout.NORTH);                   //Add three panels to the main container panel
         mainPanel.add(jout, BorderLayout.CENTER);
 
         jout.add(jl);//output for text in own panel
 
 
-        menu.add(f7x6);
-        menu.add(f8x8);
 
-        f7x6.addActionListener(new myActionListener());
-        f8x8.addActionListener(new myActionListener());
-        player0.addActionListener(new myActionListener());//playerCount
+
+        int w=6;
+        int h=6;
+        menu= new JPanel(new GridLayout(h, w));
+        menu.setPreferredSize(new Dimension(1000, 1000));
+        fields=new JButton[w][h];
+
+        for (int y = 0;y < h; y++)                //Create grid
+        {
+            for (int x = 0; x < w; x++)
+            {
+                fields[x][y] = new JButton();                //Creating buttons
+                menu.add(fields[x][y]);
+                fields[x][y].setText(" ");//is better for layout however
+                fields[x][y].setText(""+(x+4)+"x"+(y+4));
+                fields[x][y].setVisible(true);
+                fields[x][y].setEnabled(true);
+                fields[x][y].addActionListener(new myActionListener());        //Adding response event to buttons
+                fields[x][y].setPreferredSize(new Dimension(10, 10));
+            }
+        }
+        mainPanel.add(menu, BorderLayout.NORTH);
+
+        //player0.addActionListener(new myActionListener());//playerCount
         player1ki1.addActionListener(new myActionListener());
         player1ki2.addActionListener(new myActionListener());
         player2.addActionListener(new myActionListener());
@@ -128,7 +145,7 @@ public class GameGui extends JFrame {
         }
 
         resetMenu();
-        menu.add(player0);
+        //menu.add(player0);
         menu.add(player1ki1);                //Add buttons to menu
         menu.add(player1ki2);
         menu.add(player2);
@@ -163,22 +180,23 @@ public class GameGui extends JFrame {
             }
             else
             {
-                if (a.getSource() == f7x6) {
-                    w=7;
-                    h=6;
-                    fieldChoosen0();
+                for (int y = 0;y < fields[0].length; y++)                //Create grid
+                {
+                    for (int x = 0; x < fields.length; x++)
+                    {
+                        if(a.getSource()==fields[x][y])
+                        {
+                            w=x+4;
+                            h=y+4;
+                            fieldChoosen0();
+                        }
+                    }
                 }
 
-                if (a.getSource() == f8x8) {
-                    w=8;
-                    h=8;
-                    fieldChoosen0();
-                }
-
-                if (a.getSource() == player0) {
+                /*if (a.getSource() == player0) {
                     players=0;
                     playersChoosen1();
-                }
+                }*/
                 if (a.getSource() == player1ki1) {
                     players=1;
                     ki=1;
@@ -203,9 +221,29 @@ public class GameGui extends JFrame {
         ki=0;
         ready=false;
         game.setVisible(false);
-        resetMenu();
-        menu.add(f7x6);
-        menu.add(f8x8);
+
+        menu.setVisible(false);
+        int w=6;
+        int h=6;
+        menu= new JPanel(new GridLayout(h, w));
+        menu.setPreferredSize(new Dimension(1000, 1000));
+        fields=new JButton[w][h];
+
+        for (int y = 0;y < h; y++)                //Create grid
+        {
+            for (int x = 0; x < w; x++)
+            {
+                fields[x][y] = new JButton();                //Creating buttons
+                menu.add(fields[x][y]);
+                fields[x][y].setText(" ");//is better for layout however
+                fields[x][y].setText(""+(x+4)+"x"+(y+4));
+                fields[x][y].setVisible(true);
+                fields[x][y].setEnabled(true);
+                fields[x][y].addActionListener(new myActionListener());        //Adding response event to buttons
+                fields[x][y].setPreferredSize(new Dimension(10, 10));
+            }
+        }
+        mainPanel.add(menu, BorderLayout.NORTH);
         jl.setText("");
     }
 

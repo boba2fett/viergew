@@ -1,0 +1,960 @@
+wwww 4
+hhhhh 4
+dddddd 1
+w 4 h 4 d 1 : 0.001
+1
+dddddd 2
+w 4 h 4 d 2 : 0.001
+3
+dddddd 3
+w 4 h 4 d 3 : 0.001
+2
+dddddd 4
+w 4 h 4 d 4 : 0.004
+2
+dddddd 5
+w 4 h 4 d 5 : 0.013
+1
+dddddd 6
+w 4 h 4 d 6 : 0.035
+1
+dddddd 7
+w 4 h 4 d 7 : 0.048
+1
+dddddd 8
+w 4 h 4 d 8 : 0.159
+2
+dddddd 9
+w 4 h 4 d 9 : 0.598
+1
+dddddd 10
+w 4 h 4 d 10 : 1.82
+0
+dddddd 11
+w 4 h 4 d 11 : 5.406
+1
+hhhhh 5
+dddddd 1
+w 4 h 5 d 1 : 0.0
+1
+dddddd 2
+w 4 h 5 d 2 : 0.0
+0
+dddddd 3
+w 4 h 5 d 3 : 0.0
+3
+dddddd 4
+w 4 h 5 d 4 : 0.001
+2
+dddddd 5
+w 4 h 5 d 5 : 0.002
+1
+dddddd 6
+w 4 h 5 d 6 : 0.011
+0
+dddddd 7
+w 4 h 5 d 7 : 0.044
+1
+dddddd 8
+w 4 h 5 d 8 : 0.18
+2
+dddddd 9
+w 4 h 5 d 9 : 0.698
+2
+dddddd 10
+w 4 h 5 d 10 : 2.635
+2
+dddddd 11
+w 4 h 5 d 11 : 9.698
+0
+hhhhh 6
+dddddd 1
+w 4 h 6 d 1 : 0.0
+0
+dddddd 2
+w 4 h 6 d 2 : 0.0
+3
+dddddd 3
+w 4 h 6 d 3 : 0.001
+1
+dddddd 4
+w 4 h 6 d 4 : 0.0
+3
+dddddd 5
+w 4 h 6 d 5 : 0.003
+0
+dddddd 6
+w 4 h 6 d 6 : 0.012
+1
+dddddd 7
+w 4 h 6 d 7 : 0.05
+1
+dddddd 8
+w 4 h 6 d 8 : 0.197
+3
+dddddd 9
+w 4 h 6 d 9 : 0.783
+2
+dddddd 10
+w 4 h 6 d 10 : 3.097
+2
+dddddd 11
+w 4 h 6 d 11 : 11.991
+3
+hhhhh 7
+dddddd 1
+w 4 h 7 d 1 : 0.0
+1
+dddddd 2
+w 4 h 7 d 2 : 0.0
+0
+dddddd 3
+w 4 h 7 d 3 : 0.0
+1
+dddddd 4
+w 4 h 7 d 4 : 0.001
+0
+dddddd 5
+w 4 h 7 d 5 : 0.003
+2
+dddddd 6
+w 4 h 7 d 6 : 0.014
+2
+dddddd 7
+w 4 h 7 d 7 : 0.052
+0
+dddddd 8
+w 4 h 7 d 8 : 0.208
+0
+dddddd 9
+w 4 h 7 d 9 : 0.847
+2
+dddddd 10
+w 4 h 7 d 10 : 3.367
+1
+dddddd 11
+w 4 h 7 d 11 : 13.289
+2
+hhhhh 8
+dddddd 1
+w 4 h 8 d 1 : 0.0
+2
+dddddd 2
+w 4 h 8 d 2 : 0.0
+2
+dddddd 3
+w 4 h 8 d 3 : 0.0
+0
+dddddd 4
+w 4 h 8 d 4 : 0.001
+3
+dddddd 5
+w 4 h 8 d 5 : 0.004
+2
+dddddd 6
+w 4 h 8 d 6 : 0.014
+1
+dddddd 7
+w 4 h 8 d 7 : 0.055
+3
+dddddd 8
+w 4 h 8 d 8 : 0.226
+2
+dddddd 9
+w 4 h 8 d 9 : 0.917
+2
+dddddd 10
+w 4 h 8 d 10 : 3.639
+1
+dddddd 11
+w 4 h 8 d 11 : 14.385
+3
+hhhhh 9
+dddddd 1
+w 4 h 9 d 1 : 0.0
+2
+dddddd 2
+w 4 h 9 d 2 : 0.0
+0
+dddddd 3
+w 4 h 9 d 3 : 0.001
+2
+dddddd 4
+w 4 h 9 d 4 : 0.001
+2
+dddddd 5
+w 4 h 9 d 5 : 0.003
+2
+dddddd 6
+w 4 h 9 d 6 : 0.015
+0
+dddddd 7
+w 4 h 9 d 7 : 0.06
+3
+dddddd 8
+w 4 h 9 d 8 : 0.244
+1
+dddddd 9
+w 4 h 9 d 9 : 0.98
+2
+dddddd 10
+w 4 h 9 d 10 : 3.891
+1
+dddddd 11
+w 4 h 9 d 11 : 15.347
+2
+wwww 5
+hhhhh 4
+dddddd 1
+w 5 h 4 d 1 : 0.0
+4
+dddddd 2
+w 5 h 4 d 2 : 0.0
+2
+dddddd 3
+w 5 h 4 d 3 : 0.0
+1
+dddddd 4
+w 5 h 4 d 4 : 0.003
+2
+dddddd 5
+w 5 h 4 d 5 : 0.011
+0
+dddddd 6
+w 5 h 4 d 6 : 0.053
+4
+dddddd 7
+w 5 h 4 d 7 : 0.264
+4
+dddddd 8
+w 5 h 4 d 8 : 1.266
+4
+dddddd 9
+w 5 h 4 d 9 : 6.001
+3
+dddddd 10
+w 5 h 4 d 10 : 27.213
+0
+hhhhh 5
+dddddd 1
+w 5 h 5 d 1 : 0.0
+1
+dddddd 2
+w 5 h 5 d 2 : 0.0
+2
+dddddd 3
+w 5 h 5 d 3 : 0.001
+3
+dddddd 4
+w 5 h 5 d 4 : 0.002
+2
+dddddd 5
+w 5 h 5 d 5 : 0.012
+3
+dddddd 6
+w 5 h 5 d 6 : 0.062
+4
+dddddd 7
+w 5 h 5 d 7 : 0.307
+4
+dddddd 8
+w 5 h 5 d 8 : 1.524
+1
+dddddd 9
+w 5 h 5 d 9 : 7.473
+0
+dddddd 10
+w 5 h 5 d 10 : 36.252
+0
+hhhhh 6
+dddddd 1
+w 5 h 6 d 1 : 0.0
+3
+dddddd 2
+w 5 h 6 d 2 : 0.001
+4
+dddddd 3
+w 5 h 6 d 3 : 0.0
+2
+dddddd 4
+w 5 h 6 d 4 : 0.003
+4
+dddddd 5
+w 5 h 6 d 5 : 0.013
+4
+dddddd 6
+w 5 h 6 d 6 : 0.066
+3
+dddddd 7
+w 5 h 6 d 7 : 0.336
+4
+dddddd 8
+w 5 h 6 d 8 : 1.671
+3
+dddddd 9
+w 5 h 6 d 9 : 8.339
+2
+dddddd 10
+w 5 h 6 d 10 : 40.967
+2
+hhhhh 7
+dddddd 1
+w 5 h 7 d 1 : 0.0
+2
+dddddd 2
+w 5 h 7 d 2 : 0.0
+4
+dddddd 3
+w 5 h 7 d 3 : 0.001
+4
+dddddd 4
+w 5 h 7 d 4 : 0.003
+4
+dddddd 5
+w 5 h 7 d 5 : 0.013
+0
+dddddd 6
+w 5 h 7 d 6 : 0.071
+0
+dddddd 7
+w 5 h 7 d 7 : 0.364
+1
+dddddd 8
+w 5 h 7 d 8 : 1.803
+4
+dddddd 9
+w 5 h 7 d 9 : 9.006
+3
+dddddd 10
+w 5 h 7 d 10 : 44.403
+0
+hhhhh 8
+dddddd 1
+w 5 h 8 d 1 : 0.0
+3
+dddddd 2
+w 5 h 8 d 2 : 0.0
+4
+dddddd 3
+w 5 h 8 d 3 : 0.001
+0
+dddddd 4
+w 5 h 8 d 4 : 0.003
+3
+dddddd 5
+w 5 h 8 d 5 : 0.015
+0
+dddddd 6
+w 5 h 8 d 6 : 0.08
+4
+dddddd 7
+w 5 h 8 d 7 : 0.39
+0
+dddddd 8
+w 5 h 8 d 8 : 1.986
+1
+dddddd 9
+w 5 h 8 d 9 : 9.865
+0
+dddddd 10
+w 5 h 8 d 10 : 48.707
+2
+hhhhh 9
+dddddd 1
+w 5 h 9 d 1 : 0.0
+1
+dddddd 2
+w 5 h 9 d 2 : 0.001
+2
+dddddd 3
+w 5 h 9 d 3 : 0.0
+1
+dddddd 4
+w 5 h 9 d 4 : 0.003
+0
+dddddd 5
+w 5 h 9 d 5 : 0.016
+4
+dddddd 6
+w 5 h 9 d 6 : 0.085
+4
+dddddd 7
+w 5 h 9 d 7 : 0.426
+2
+dddddd 8
+w 5 h 9 d 8 : 2.125
+4
+dddddd 9
+w 5 h 9 d 9 : 10.659
+3
+dddddd 10
+w 5 h 9 d 10 : 52.506
+3
+wwww 6
+hhhhh 4
+dddddd 1
+w 6 h 4 d 1 : 0.0
+3
+dddddd 2
+w 6 h 4 d 2 : 0.0
+1
+dddddd 3
+w 6 h 4 d 3 : 0.001
+1
+dddddd 4
+w 6 h 4 d 4 : 0.006
+2
+dddddd 5
+w 6 h 4 d 5 : 0.037
+3
+dddddd 6
+w 6 h 4 d 6 : 0.22
+1
+dddddd 7
+w 6 h 4 d 7 : 1.325
+1
+dddddd 8
+w 6 h 4 d 8 : 7.71
+4
+dddddd 9
+w 6 h 4 d 9 : 44.455
+3
+hhhhh 5
+dddddd 1
+w 6 h 5 d 1 : 0.0
+3
+dddddd 2
+w 6 h 5 d 2 : 0.0
+1
+dddddd 3
+w 6 h 5 d 3 : 0.001
+0
+dddddd 4
+w 6 h 5 d 4 : 0.007
+2
+dddddd 5
+w 6 h 5 d 5 : 0.042
+0
+dddddd 6
+w 6 h 5 d 6 : 0.251
+1
+dddddd 7
+w 6 h 5 d 7 : 1.516
+1
+dddddd 8
+w 6 h 5 d 8 : 9.014
+5
+dddddd 9
+w 6 h 5 d 9 : 53.611
+4
+hhhhh 6
+dddddd 1
+w 6 h 6 d 1 : 0.0
+2
+dddddd 2
+w 6 h 6 d 2 : 0.0
+3
+dddddd 3
+w 6 h 6 d 3 : 0.002
+4
+dddddd 4
+w 6 h 6 d 4 : 0.007
+3
+dddddd 5
+w 6 h 6 d 5 : 0.046
+3
+dddddd 6
+w 6 h 6 d 6 : 0.278
+5
+dddddd 7
+w 6 h 6 d 7 : 1.676
+1
+dddddd 8
+w 6 h 6 d 8 : 9.857
+3
+dddddd 9
+w 6 h 6 d 9 : 59.291
+5
+hhhhh 7
+dddddd 1
+w 6 h 7 d 1 : 0.0
+0
+dddddd 2
+w 6 h 7 d 2 : 0.0
+1
+dddddd 3
+w 6 h 7 d 3 : 0.001
+1
+dddddd 4
+w 6 h 7 d 4 : 0.008
+4
+dddddd 5
+w 6 h 7 d 5 : 0.049
+0
+dddddd 6
+w 6 h 7 d 6 : 0.297
+0
+dddddd 7
+w 6 h 7 d 7 : 1.78
+4
+dddddd 8
+w 6 h 7 d 8 : 10.544
+0
+dddddd 9
+w 6 h 7 d 9 : 63.302
+3
+hhhhh 8
+dddddd 1
+w 6 h 8 d 1 : 0.0
+0
+dddddd 2
+w 6 h 8 d 2 : 0.0
+4
+dddddd 3
+w 6 h 8 d 3 : 0.002
+1
+dddddd 4
+w 6 h 8 d 4 : 0.009
+1
+dddddd 5
+w 6 h 8 d 5 : 0.053
+5
+dddddd 6
+w 6 h 8 d 6 : 0.322
+3
+dddddd 7
+w 6 h 8 d 7 : 1.955
+0
+dddddd 8
+w 6 h 8 d 8 : 11.585
+3
+dddddd 9
+w 6 h 8 d 9 : 69.436
+0
+hhhhh 9
+dddddd 1
+w 6 h 9 d 1 : 0.0
+4
+dddddd 2
+w 6 h 9 d 2 : 0.0
+0
+dddddd 3
+w 6 h 9 d 3 : 0.001
+0
+dddddd 4
+w 6 h 9 d 4 : 0.01
+0
+dddddd 5
+w 6 h 9 d 5 : 0.058
+0
+dddddd 6
+w 6 h 9 d 6 : 0.359
+0
+dddddd 7
+w 6 h 9 d 7 : 2.106
+0
+dddddd 8
+w 6 h 9 d 8 : 12.54
+0
+dddddd 9
+w 6 h 9 d 9 : 75.008
+1
+wwww 7
+hhhhh 4
+dddddd 1
+w 7 h 4 d 1 : 0.001
+6
+dddddd 2
+w 7 h 4 d 2 : 0.0
+4
+dddddd 3
+w 7 h 4 d 3 : 0.002
+4
+dddddd 4
+w 7 h 4 d 4 : 0.015
+4
+dddddd 5
+w 7 h 4 d 5 : 0.105
+0
+dddddd 6
+w 7 h 4 d 6 : 0.723
+2
+dddddd 7
+w 7 h 4 d 7 : 5.072
+3
+dddddd 8
+w 7 h 4 d 8 : 34.587
+6
+hhhhh 5
+dddddd 1
+w 7 h 5 d 1 : 0.0
+4
+dddddd 2
+w 7 h 5 d 2 : 0.0
+3
+dddddd 3
+w 7 h 5 d 3 : 0.003
+0
+dddddd 4
+w 7 h 5 d 4 : 0.016
+2
+dddddd 5
+w 7 h 5 d 5 : 0.115
+5
+dddddd 6
+w 7 h 5 d 6 : 0.819
+4
+dddddd 7
+w 7 h 5 d 7 : 5.75
+1
+dddddd 8
+w 7 h 5 d 8 : 39.94
+0
+hhhhh 6
+dddddd 1
+w 7 h 6 d 1 : 0.0
+4
+dddddd 2
+w 7 h 6 d 2 : 0.0
+4
+dddddd 3
+w 7 h 6 d 3 : 0.003
+3
+dddddd 4
+w 7 h 6 d 4 : 0.018
+3
+dddddd 5
+w 7 h 6 d 5 : 0.127
+0
+dddddd 6
+w 7 h 6 d 6 : 0.894
+2
+dddddd 7
+w 7 h 6 d 7 : 6.336
+1
+dddddd 8
+w 7 h 6 d 8 : 43.749
+6
+hhhhh 7
+dddddd 1
+w 7 h 7 d 1 : 0.0
+1
+dddddd 2
+w 7 h 7 d 2 : 0.001
+4
+dddddd 3
+w 7 h 7 d 3 : 0.003
+5
+dddddd 4
+w 7 h 7 d 4 : 0.02
+2
+dddddd 5
+w 7 h 7 d 5 : 0.143
+4
+dddddd 6
+w 7 h 7 d 6 : 0.993
+5
+dddddd 7
+w 7 h 7 d 7 : 7.033
+0
+dddddd 8
+w 7 h 7 d 8 : 48.181
+4
+hhhhh 8
+dddddd 1
+w 7 h 8 d 1 : 0.0
+0
+dddddd 2
+w 7 h 8 d 2 : 0.001
+4
+dddddd 3
+w 7 h 8 d 3 : 0.003
+5
+dddddd 4
+w 7 h 8 d 4 : 0.022
+3
+dddddd 5
+w 7 h 8 d 5 : 0.158
+3
+dddddd 6
+w 7 h 8 d 6 : 1.103
+3
+dddddd 7
+w 7 h 8 d 7 : 7.759
+3
+dddddd 8
+w 7 h 8 d 8 : 53.364
+4
+hhhhh 9
+dddddd 1
+w 7 h 9 d 1 : 0.0
+3
+dddddd 2
+w 7 h 9 d 2 : 0.0
+0
+dddddd 3
+w 7 h 9 d 3 : 0.004
+2
+dddddd 4
+w 7 h 9 d 4 : 0.023
+2
+dddddd 5
+w 7 h 9 d 5 : 0.17
+6
+dddddd 6
+w 7 h 9 d 6 : 1.193
+5
+dddddd 7
+w 7 h 9 d 7 : 8.383
+5
+dddddd 8
+w 7 h 9 d 8 : 58.003
+4
+wwww 8
+hhhhh 4
+dddddd 1
+w 8 h 4 d 1 : 0.0
+4
+dddddd 2
+w 8 h 4 d 2 : 0.001
+1
+dddddd 3
+w 8 h 4 d 3 : 0.004
+2
+dddddd 4
+w 8 h 4 d 4 : 0.031
+4
+dddddd 5
+w 8 h 4 d 5 : 0.255
+2
+dddddd 6
+w 8 h 4 d 6 : 2.026
+3
+dddddd 7
+w 8 h 4 d 7 : 16.236
+2
+hhhhh 5
+dddddd 1
+w 8 h 5 d 1 : 0.0
+3
+dddddd 2
+w 8 h 5 d 2 : 0.0
+4
+dddddd 3
+w 8 h 5 d 3 : 0.005
+0
+dddddd 4
+w 8 h 5 d 4 : 0.036
+4
+dddddd 5
+w 8 h 5 d 5 : 0.293
+0
+dddddd 6
+w 8 h 5 d 6 : 2.323
+4
+dddddd 7
+w 8 h 5 d 7 : 18.658
+4
+hhhhh 6
+dddddd 1
+w 8 h 6 d 1 : 0.0
+4
+dddddd 2
+w 8 h 6 d 2 : 0.0
+0
+dddddd 3
+w 8 h 6 d 3 : 0.005
+4
+dddddd 4
+w 8 h 6 d 4 : 0.04
+7
+dddddd 5
+w 8 h 6 d 5 : 0.322
+3
+dddddd 6
+w 8 h 6 d 6 : 2.587
+6
+dddddd 7
+w 8 h 6 d 7 : 20.662
+2
+hhhhh 7
+dddddd 1
+w 8 h 7 d 1 : 0.0
+4
+dddddd 2
+w 8 h 7 d 2 : 0.001
+0
+dddddd 3
+w 8 h 7 d 3 : 0.005
+1
+dddddd 4
+w 8 h 7 d 4 : 0.045
+1
+dddddd 5
+w 8 h 7 d 5 : 0.359
+0
+dddddd 6
+w 8 h 7 d 6 : 2.872
+6
+dddddd 7
+w 8 h 7 d 7 : 23.018
+4
+hhhhh 8
+dddddd 1
+w 8 h 8 d 1 : 0.0
+6
+dddddd 2
+w 8 h 8 d 2 : 0.001
+5
+dddddd 3
+w 8 h 8 d 3 : 0.006
+6
+dddddd 4
+w 8 h 8 d 4 : 0.048
+6
+dddddd 5
+w 8 h 8 d 5 : 0.395
+0
+dddddd 6
+w 8 h 8 d 6 : 3.187
+3
+dddddd 7
+w 8 h 8 d 7 : 25.413
+3
+hhhhh 9
+dddddd 1
+w 8 h 9 d 1 : 0.001
+2
+dddddd 2
+w 8 h 9 d 2 : 0.0
+4
+dddddd 3
+w 8 h 9 d 3 : 0.008
+0
+dddddd 4
+w 8 h 9 d 4 : 0.053
+0
+dddddd 5
+w 8 h 9 d 5 : 0.432
+2
+dddddd 6
+w 8 h 9 d 6 : 3.463
+1
+dddddd 7
+w 8 h 9 d 7 : 27.658
+1
+wwww 9
+hhhhh 4
+dddddd 1
+w 9 h 4 d 1 : 0.0
+4
+dddddd 2
+w 9 h 4 d 2 : 0.001
+0
+dddddd 3
+w 9 h 4 d 3 : 0.007
+3
+dddddd 4
+w 9 h 4 d 4 : 0.063
+8
+dddddd 5
+w 9 h 4 d 5 : 0.574
+6
+dddddd 6
+w 9 h 4 d 6 : 5.104
+0
+hhhhh 5
+dddddd 1
+w 9 h 5 d 1 : 0.0
+5
+dddddd 2
+w 9 h 5 d 2 : 0.001
+2
+dddddd 3
+w 9 h 5 d 3 : 0.008
+8
+dddddd 4
+w 9 h 5 d 4 : 0.072
+6
+dddddd 5
+w 9 h 5 d 5 : 0.645
+8
+dddddd 6
+w 9 h 5 d 6 : 5.872
+1
+hhhhh 6
+dddddd 1
+w 9 h 6 d 1 : 0.001
+6
+dddddd 2
+w 9 h 6 d 2 : 0.001
+0
+dddddd 3
+w 9 h 6 d 3 : 0.008
+3
+dddddd 4
+w 9 h 6 d 4 : 0.081
+7
+dddddd 5
+w 9 h 6 d 5 : 0.725
+8
+dddddd 6
+w 9 h 6 d 6 : 6.547
+1
+hhhhh 7
+dddddd 1
+w 9 h 7 d 1 : 0.0
+4
+dddddd 2
+w 9 h 7 d 2 : 0.001
+6
+dddddd 3
+w 9 h 7 d 3 : 0.01
+3
+dddddd 4
+w 9 h 7 d 4 : 0.09
+4
+dddddd 5
+w 9 h 7 d 5 : 0.821
+7
+dddddd 6
+w 9 h 7 d 6 : 7.333
+8
+hhhhh 8
+dddddd 1
+w 9 h 8 d 1 : 0.0
+2
+dddddd 2
+w 9 h 8 d 2 : 0.001
+7
+dddddd 3
+w 9 h 8 d 3 : 0.011
+6
+dddddd 4
+w 9 h 8 d 4 : 0.098
+8
+dddddd 5
+w 9 h 8 d 5 : 0.895
+3
+dddddd 6
+w 9 h 8 d 6 : 8.085
+0
+hhhhh 9
+dddddd 1
+w 9 h 9 d 1 : 0.001
+5
+dddddd 2
+w 9 h 9 d 2 : 0.001
+2
+dddddd 3
+w 9 h 9 d 3 : 0.012
+1
+dddddd 4
+w 9 h 9 d 4 : 0.107
+0
+dddddd 5
+w 9 h 9 d 5 : 0.97
+0
+dddddd 6
+w 9 h 9 d 6 : 8.824
+4

@@ -5,6 +5,7 @@ class AiMiniMax
     private final ArrayList<Integer> history;
     private final int w;
     private final int h;
+    final int deepness;
 
     AiMiniMax(int turn,ArrayList<Integer> history,int w,int h)
     {
@@ -12,6 +13,39 @@ class AiMiniMax
         this.history=history;
         this.w=w;
         this.h=h;
+        int deep=7;
+        switch(w)
+        {
+            case 4:
+                deep=h>6?9:10;
+                break;
+            case 5:
+                deep=h>6?8:9;
+                break;
+            case 6:
+                deep=h>6?7:8;
+                break;
+            case 7:
+                deep=h>6?6:7;
+                break;
+            case 8:
+                deep=h>6?6:6;
+                break;
+            case 9:
+                deep=h>6?6:6;
+                break;
+
+        }
+        deepness=deep;
+    }
+
+    AiMiniMax(int turn,ArrayList<Integer> history,int w,int h,int deep)
+    {
+        this.turn=turn;
+        this.history=history;
+        this.w=w;
+        this.h=h;
+        deepness=deep;
     }
 
     private boolean legal(int further)
@@ -75,7 +109,7 @@ class AiMiniMax
         VierLogik test;
         if(maximizingPlayer)
         {
-            value = -50;
+            value = -43;//theoretical
 
             for(int i=0;i<w;i++)
             {
@@ -106,7 +140,7 @@ class AiMiniMax
         }
         else
         {
-            value = 50;
+            value = 43;//theoretical
             for(int i=0;i<w;i++)
             {
                 test=recreate(hist);
@@ -138,7 +172,6 @@ class AiMiniMax
 
     int aiTurn()
     {
-        final int deepness=w==8?6:7;
         int[]eval=new int[w];
         boolean[]use=new boolean[w];
         for(int j=0;j<w;j++)

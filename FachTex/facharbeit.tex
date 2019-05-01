@@ -4,6 +4,7 @@
 	\usepackage[T1]{fontenc}
 	\usepackage{babel}
 	\usepackage{graphicx} 
+	\usepackage{hyperref} 
 	%\usepackage[german]{algorithm2e}
 	
 	\title{Vier-Gewinnt}
@@ -16,6 +17,7 @@
 	\tableofcontents
 	\newpage
 	\pagenumbering{arabic}
+	\section{Einleitung}
 	
 	\section{Vier Gewinnt}
 	\subsection{Spielidee}
@@ -23,15 +25,32 @@
 	Dabei ist es egal ob dies horizontal, vertikal oder diagonal erreicht wird.
 	Es spielen immer zwei Spieler gegeneinander, die abwechselnd einen Spielstein von oben in das Spielfeld einfügen, der dann so lange herunterfällt, bis er auf das Ende des Spielfeldes oder einen anderen Spielstein stößt.
 	Sobald zum ersten mal vier Spielsteine eines Spielers eine Reihe bilden, endet das Spiel und der betreffende Spieler gewinnt.
-	Das Spielfeld in der Grundversion ist ein 7x6 Feld, das aber schon als gelöst gilt (dazu später mehr).
-	Grundsätzlich sind aber auch größere Felder möglich, die aber meistens nie über 8x8 hinausgehen.
+	Das Spielfeld in der Grundversion ist ein 7x6 Feld. Grundsätzlich sind aber auch größere und kleinere Felder möglich.
+	\footnote{Lehmann, Jörg Vier gewinnt \url{http://www.brettspiele-report.de/vier-gewinnt/} Stand: 01.05.2019}
 	\subsection{Implementation}
 	\textit{klassendiagramm}
 	\section{Implementation der KI}
 	\subsection{Taktik des NPCs}
-	Die Taktik des NPCs ist natürlich zu Gewinnen oder eine (unmittelbare) Niederlage zu verhindern.
-	\textit{MINIMAX methode}
+	Die Taktik des NPCs ist natürlich zu Gewinnen oder eine (unmittelbare) Niederlage zu verhindern. Dazu wird ein Minimax-Algorithmus genutzt, um die beste Entscheidung zu treffen. Bei diesem Verfahren durchläuft man einen Suchbaum, der bei der maximalen Tiefe jedem Ergebnis einen Wert zuweist oder wenn schon vorher ein Sieg oder eine Niederlage auftritt diesen jeweils einen positiven bzw. negativen Wert zuordnet. Bei der Auswertung wird dann immer das Minimum der gegnerischen Züge gewertet und das Maximum der eigenen, so dass jeder Spieler ein "perfektes" Spiel spielt. Des Weiteren sieht der hier implementierte Algorithmus einen schnellen Sieg bzw. eine spätere Niederlagen als besser an.
+	\\
+	Neben dem Minimax-Algorithmus könnte man auch vorberechnete Eröffnungszüge nutzen, aber diese unterscheiden sich für jede Spielfeldgröße. Einige Spiele gelten dadurch auch schon als gelöst:
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{w-h-viergew}
+		\caption{}
+		\label{fig:w-h-viergew}
+		\footnote{Tromp, John  "John's Connect Four Playground"\url{http://tromp.github.io/c4/c4.html} Stand: 01.05.2019}
+	\end{figure}
+    \newpage
+	Zu Abbildung 1:\\
+	+ der 1. Spieler gewinnt\\
+	- der 2. Spieler gewinnt\\
+	= Unentschieden\\
+	
+	
+	
 	\subsection{Schwächen}
+	Theoretisch sind der KI nur Grenzen gesetzt durch die Rechenleistung bzw. die Tiefe der Simulation, aber um mehr Züge zu simulieren bräuchte man erheblich mehr Rechenleistung. Die Komplexität steigt nahezu exponentiell, aber je weiter das Spiel fortgeschritten ist und je weniger Möglichkeiten es gibt, desto schneller wird der Algorithmus.
 	\section{Künstliche Intelligenz}
 	\textit{Definition}
 	\subsection{Aktueller Stand}

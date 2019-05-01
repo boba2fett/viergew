@@ -68,11 +68,23 @@ public class VierLogik
                 }
             }
         }
-        if(turn==42)
+        if(nozero())
         {
             return 0;
         }
         return -1;
+    }
+
+    boolean nozero()
+    {
+        for(int i=0;i<w;i++)
+        {
+            if(setPos(i)!=-1)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     boolean checkLines(int x, int y, int sp)
