@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="viergewIt:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/viergewIt_jar</output-path>
+    <root id="archive" name="viergewIt.jar">
+      <element id="module-output" name="viergewIt" />
+    </root>
+  </artifact>
+</component>
