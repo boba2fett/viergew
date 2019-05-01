@@ -17,22 +17,128 @@ class AiMiniMax
         switch(w)
         {
             case 4:
-                deep=h>6?9:10;
+                switch(h)
+                {
+                    case 4:
+                        deep=11;
+                        break;
+                    case 5:
+                        deep=10;
+                        break;
+                    case 6:
+                        deep=10;
+                        break;
+                    case 7:
+                        deep=10;
+                        break;
+                    case 8:
+                        deep=10;
+                        break;
+                    case 9:
+                        deep=10;
+                        break;
+
+                }
                 break;
             case 5:
-                deep=h>6?8:9;
+                switch(h)
+                {
+                    case 4:
+                        deep=9;
+                        break;
+                    case 5:
+                        deep=9;
+                        break;
+                    case 6:
+                        deep=9;
+                        break;
+                    case 7:
+                        deep=8;
+                        break;
+                    case 8:
+                        deep=8;
+                        break;
+                    case 9:
+                        deep=8;
+                        break;
+
+                }
                 break;
             case 6:
-                deep=h>6?7:8;
+                switch(h)
+                {
+                    case 4:
+                        deep=8;
+                        break;
+                    case 5:
+                        deep=8;
+                        break;
+                    case 6:
+                        deep=7;
+                        break;
+                    case 7:
+                        deep=7;
+                        break;
+                    case 8:
+                        deep=7;
+                        break;
+                    case 9:
+                        deep=7;
+                        break;
+
+                }
                 break;
             case 7:
-                deep=h>6?6:7;
+                switch(h)
+                {
+                    case 4:
+                        deep=7;
+                        break;
+                    case 5:
+                        deep=7;
+                        break;
+                    case 6:
+                        deep=7;
+                        break;
+                    case 7:
+                        deep=7;
+                        break;
+                    case 8:
+                        deep=7;
+                        break;
+                    case 9:
+                        deep=7;
+                        break;
+
+                }
                 break;
             case 8:
-                deep=h>6?6:6;
+                deep=6;
+                /*switch(h)
+                {
+                    case 4:
+                        deep=6;
+                        break;
+                    case 5:
+                        deep=6;
+                        break;
+                    case 6:
+                        deep=6;
+                        break;
+                    case 7:
+                        deep=6;
+                        break;
+                    case 8:
+                        deep=6;
+                        break;
+                    case 9:
+                        deep=6;
+                        break;
+
+                }*/
                 break;
             case 9:
-                deep=h>6?6:6;
+                deep=6;
                 break;
 
         }
