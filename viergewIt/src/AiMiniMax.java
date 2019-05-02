@@ -1,11 +1,11 @@
 import java.util.*;
-class AiMiniMax
+class AiMiniMax//implementation of the Minimax-KI
 {
-    private final int turn;
-    private final ArrayList<Integer> history;
-    private final int w;
-    private final int h;
-    final int deepness;
+    private final int turn;//needed for choosing player
+    private final ArrayList<Integer> history;//needed for recreation
+    private final int w;//width
+    private final int h;//height
+    private final int deepness;//searching deep
 
     AiMiniMax(int turn,ArrayList<Integer> history,int w,int h)
     {
@@ -14,7 +14,7 @@ class AiMiniMax
         this.w=w;
         this.h=h;
         int deep=7;
-        switch(w)
+        switch(w)//decision based on simulations
         {
             case 4:
                 switch(h)
@@ -145,7 +145,7 @@ class AiMiniMax
         deepness=deep;
     }
 
-    AiMiniMax(int turn,ArrayList<Integer> history,int w,int h,int deep)
+    AiMiniMax(int turn,ArrayList<Integer> history,int w,int h,int deep)//for simulations or exact values for deep
     {
         this.turn=turn;
         this.history=history;
@@ -154,7 +154,7 @@ class AiMiniMax
         deepness=deep;
     }
 
-    private boolean legal(int further)
+    private boolean legal(int further)//set On further possible when recreated
     {
         VierLogik vier=new VierLogik(w,h);
         for (int num : history)
@@ -164,7 +164,7 @@ class AiMiniMax
         return vier.setOn(further);
     }
 
-    private VierLogik recreate(ArrayList<Integer> further)
+    private VierLogik recreate(ArrayList<Integer> further)//recreate a Game with addition of the turns in further
     {
         VierLogik vier=new VierLogik(w,h);
         for (int num : history)
@@ -178,7 +178,7 @@ class AiMiniMax
         return vier;
     }
 
-    private VierLogik recreate(int further)
+    private VierLogik recreate(int further)//recreate a Game with addition of further
     {
         VierLogik vier=new VierLogik(w,h);
         for (int num : history)
@@ -190,7 +190,7 @@ class AiMiniMax
         return vier;
     }
 
-    private ArrayList<Integer> possible()
+    private ArrayList<Integer> possible()//should never be used, but in case...
     {
         ArrayList<Integer> poss=new ArrayList<Integer>();
         for(int i=0;i<w;i++)
@@ -203,100 +203,106 @@ class AiMiniMax
         return poss;
     }
 
-    private int minimax(boolean maximizingPlayer, ArrayList<Integer> hist, int depth)
+    private int minimax(boolean maximizingPlayer, ArrayList<Integer> hist, int depth)//main minimax-algorithm
     {
-        if(depth==0)
+        if(depth==0)//max deepness is 0 for a tie
         {
             return 0;
         }
         int value;
-        final int sp=turn%2+1;
-        final int gsp=(1+turn)%2+1;
-        VierLogik test;
-        if(maximizingPlayer)
+        final int sp=turn%2+1;//player whom is the AI
+        final int gsp=(1+turn)%2+1;//opposite player
+        VierLogik test;//for simulation
+        if(maximizingPlayer)//good for the AI so the maximum of the values
         {
-            value = -43;//theoretical
+            value = -deepness-1;//theoretical
 
-            for(int i=0;i<w;i++)
+            for(int i=0;i<w;i++)//for each field
             {
-                test=recreate(hist);
+                test=recreate(hist);//recreate the field of the game
 
-                if(test.setOn(i))
+                if(test.setOn(i))//if set not possible value -43
                 {
-                    if(test.checkwinner()==-1)
+                    if(test.checkwinner()==-1)//next Turn interesting
                     {
                         ArrayList<Integer>hist2=(ArrayList<Integer>)hist.clone();
-                        hist2.add(i);
-                        value = Math.max(value, minimax( false,hist2,depth-1));
+                        hist2.add(i);//add the number which was set on
+                        value = Math.max(value, minimax( false,hist2,depth-1));//false because after your turn is the opponent's turn
+                        //depth-1 to make it end sometime
                     }
-                    if(test.checkwinner()==0)
+                    if(test.checkwinner()==0)//tie
                     {
                         value = Math.max(value, 0);
                     }
-                    if(test.checkwinner()==sp)
+                    if(test.checkwinner()==sp)//win
                     {
                         value = Math.max(value, depth);
                     }
-                    if(test.checkwinner()==gsp)
+                    if(test.checkwinner()==gsp)//defeat (should never be the case)
                     {
                         value = Math.max(value, -depth);
                     }
                 }
             }
         }
-        else
+        else//not good: perfect turn for opponent
         {
-            value = 43;//theoretical
-            for(int i=0;i<w;i++)
+            value = deepness+1;//theoretical
+            for(int i=0;i<w;i++)//for each field
             {
-                test=recreate(hist);
-                if(test.setOn(i))
+                test=recreate(hist);//recreate the field of the game
+                if(test.setOn(i))//if set not possible value -43
                 {
-                    if(test.checkwinner()==-1)
+                    if(test.checkwinner()==-1)//next Turn interesting
                     {
                         ArrayList<Integer>hist2=(ArrayList<Integer>)hist.clone();
-                        hist2.add(i);
-                        value = Math.min(value, minimax( true,hist2,depth-1));
+                        hist2.add(i);//add the number which was set on
+                        value = Math.min(value, minimax( true,hist2,depth-1));//true because after that is your turn
+                        //depth-1 to make it end sometime
                     }
-                    if(test.checkwinner()==0)
+                    if(test.checkwinner()==0)//tie
                     {
                         value = Math.min(value, 0);
                     }
-                    if(test.checkwinner()==sp)
+                    if(test.checkwinner()==sp)// win (should never be the case)
                     {
                         value = Math.min(value, depth);
                     }
-                    if(test.checkwinner()==gsp)
+                    if(test.checkwinner()==gsp)//defeat
                     {
                         value = Math.min(value, -depth);
                     }
                 }
             }
         }
-        return value;
+        return value;//evaluated value for game situation
     }
 
-    int aiTurn()
+    int aiTurn()//only method to be used from outside
     {
-        int[]eval=new int[w];
-        boolean[]use=new boolean[w];
+        int[]eval=new int[w];//store the values for setting on field 0 to w-1
+        boolean[]use=new boolean[w];//true: use value in eval
+        //false: don't use value in eval
         for(int j=0;j<w;j++)
         {
-            if(recreate(j).checkwinner()!=-1)
+            if(recreate(j).checkwinner()!=-1)//instant win (checkwinner should never be the opposite player)
             {
                 return j;
             }
-            use[j]=legal(j);
+            use[j]=legal(j);//decide whether to use or not
             if(use[j])
             {
                 ArrayList<Integer> hist=new ArrayList<Integer>();
-                hist.add(j);
-                eval[j]=minimax(false,hist,deepness);
+                hist.add(j);//first entry to add to recreations
+                eval[j]=minimax(false,hist,deepness);//using minimax to assign value to each possible field to set on
             }
         }
 
         ArrayList<Integer> whynot=new ArrayList<Integer>();
-        for(int i=deepness;i>=-deepness;i--)
+        for(int i=deepness;i>=-deepness;i--)//i value of deepness would be best
+            //0 would be a tie or max deepness reached
+            //values below 0 are a win of the opposite
+            //the deeper the faster the defeat
         {
             for(int j=0;j<w;j++)
             {
@@ -305,13 +311,13 @@ class AiMiniMax
                     whynot.add(j);
                 }
             }
-            if(whynot.size()!=0)
+            if(whynot.size()!=0)//if sth. from eval matches i
             {
                 int num = (int)(Math.random() * whynot.size());
-                return whynot.get(num);
+                return whynot.get(num);//choose one of the options
             }
         }
-        whynot=possible();
+        whynot=possible();//should never be used, but who knows ...
         int num = (int)(Math.random() * whynot.size());
         return whynot.get(num);
     }

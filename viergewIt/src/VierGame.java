@@ -17,7 +17,7 @@ public class VierGame extends VierLogik
         int pos=setPos(num);
         if(pos!=-1)
         {
-            history.add(num);
+            history.add(num);//addition of adding to history (for the AI)
             game[num][pos] = turn % 2 + 1;
             turn++;
             return true;
@@ -25,7 +25,7 @@ public class VierGame extends VierLogik
         return false;
     }
 
-    void out()
+    void out()//output for console game
     {
         for (int y = 0; y < game[0].length ; y++)
         {
@@ -39,7 +39,7 @@ public class VierGame extends VierLogik
 
     int ai()
     {
-        AiMiniMax a=new AiMiniMax(turn,(ArrayList<Integer>)history.clone(),w,h);
+        AiMiniMax a=new AiMiniMax(turn,(ArrayList<Integer>)history.clone(),w,h);//give AI all important information
         return a.aiTurn();
     }
 
@@ -48,9 +48,10 @@ public class VierGame extends VierLogik
         return turn;
     }
 
-    int[][] winwhere()
+    int[][] winwhere()//where has been won
     {
         int[][] arr=new int[4][2];//4 x:y
+        //x1:y1; x2:y2; x3:y3; x4:y4;
         if(checkwinner()>0)
         {
             for (int sp = 1; sp <= 2; sp++)
@@ -59,7 +60,7 @@ public class VierGame extends VierLogik
                 {
                     for (int y = 0; y < game[x].length; y++)
                     {
-                        if (checkLines(x, y, sp))
+                        if (checkLines(x, y, sp))//win was line -
                         {
                             for (int i = 0; i < 4; i++)
                             {
@@ -67,7 +68,7 @@ public class VierGame extends VierLogik
                                 arr[i][1]=y;
                             }
                         }
-                        if(checkRows(x, y, sp))
+                        if(checkRows(x, y, sp))//win was row |
                         {
                             for (int i = 0; i < 4; i++)
                             {
@@ -75,7 +76,7 @@ public class VierGame extends VierLogik
                                 arr[i][1]=y + i;
                             }
                         }
-                        if(checkBackslash(x, y, sp))
+                        if(checkBackslash(x, y, sp))//win was backslash \
                         {
                             for (int i = 0; i < 4; i++)
                             {
@@ -83,7 +84,7 @@ public class VierGame extends VierLogik
                                 arr[i][1]=y - i;
                             }
                         }
-                        if(checkSlash(x, y, sp))
+                        if(checkSlash(x, y, sp))//win was slash /
                         {
                             for (int i = 0; i < 4; i++)
                             {
