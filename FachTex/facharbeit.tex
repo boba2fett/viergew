@@ -28,11 +28,11 @@
 	Das Spielfeld in der Grundversion ist ein 7x6 Feld. Grundsätzlich sind aber auch größere und kleinere Felder möglich.
 	\footnote{Lehmann, Jörg \glqq Vier gewinnt\grqq{} \url{http://www.brettspiele-report.de/vier-gewinnt/} Stand: 01.05.2019}
 	\subsection{Implementation}
-	Zunächst habe ich, wie in der Softwareentwicklung üblich die Klassendiagramme angelegt,
-	\textit{Klassendiagramme}
-	 um diese dann nach Umwandlung in ein Implementationsdiagramm dann umzusetzen.
-	\textit{Implementationsdiagramme}
-	Nach der Umsetzung versuchte ich die Laufzeit etwas zu senken, indem ich eine eigene Klasse erstellte an deren Objekten die Simulationen durchgeführt wird, um es mehr abzutrennen und um die redundante Speicherung der bisherigen Züge zu vermeiden.
+	Zunächst habe ich, wie in der Softwareentwicklung üblich die Klassendiagramme angelegt,\\
+	\textit{Klassendiagramme}\\
+	 um diese dann nach Umwandlung in ein Implementationsdiagramm dann umzusetzen.\\
+	\textit{Implementationsdiagramme}\\
+	Nach der Umsetzung versuchte ich die Laufzeit etwas zu senken, indem ich eine eigene Klasse erstellte an deren Objekten die Simulationen durchgeführt wird, um es mehr abzutrennen und um die redundante Speicherung der bisherigen Züge zu vermeiden.\\
 	\textit{Klassendiagramme Vier Game und Logik}
 	\section{Implementation der KI}
 	\subsection{Taktik der KI}
@@ -57,7 +57,9 @@
 	\subsection{Schwächen}
 	Theoretisch sind der KI nur Grenzen gesetzt durch die Rechenleistung bzw. die Tiefe der Simulation
 	\subsection{Effizienzbetrachtung}
-	Um mehr Züge zu simulieren ist erheblich mehr Rechenleistung erforderlich. Die Komplexität steigt nahezu exponentiell, aber je weiter das Spiel fortgeschritten ist und je weniger Möglichkeiten es gibt, desto schneller wird der Algorithmus. Ich habe Simulationen durchgeführt mit verschiedenen Feldgrößen und habe den ersten Zug von der KI berechnen lassen, dabei habe ich die Zeit gemessen und damit passende Tiefen gewählt, um die Zeit bei weniger als 10 Sekunden zu halten. Hätte ich die vordefinierten Pfade genommen, wäre deutlich an Rechenzeit gespart worden, jedoch bräuchte man zum Erstellen dieser sehr lange bzw. würde es den Rahmen dieser Facharbeit sprengen.
+	Um mehr Züge zu simulieren ist erheblich mehr Rechenleistung erforderlich. Die Komplexität steigt nahezu exponentiell, aber je weiter das Spiel fortgeschritten ist und je weniger Möglichkeiten es gibt, desto schneller wird der Algorithmus. Ich habe Simulationen durchgeführt mit verschiedenen Feldgrößen und habe den ersten Zug von der KI berechnen lassen, dabei habe ich die Zeit gemessen und damit passende Tiefen gewählt, um die Zeit bei weniger als 10 Sekunden zu halten. Hätte ich die vordefinierten Pfade genommen, wäre deutlich an Rechenzeit gespart worden, jedoch bräuchte man zum Erstellen dieser sehr lange bzw. würde es den Rahmen dieser Facharbeit sprengen. Auch wäre es möglich anstatt der VierLogik Klasse auch einfach nur kopierte Arrays zu verwenden, aber dabei ist es schwer darauf zu achten, dass keines dieser Arrays verändert wird.\\
+	Aber nun zur Effizienz bei verschiedenen Feldgrößen. Da die Höhe nicht so ausschlaggebend ist wird hier nur betrachtet wie sich die Ausführungszeit verändert, wenn die Suchtiefe und die Feldbreite variiert werden. Die KI versucht in jedem Fall den ersten Zug zu berechnen.
+	\textit{Diagramm 5-7-9w 1-10d}
 	\section{Künstliche Intelligenz}
 	\textit{Definition}
 	\subsection{Aktueller Stand}
