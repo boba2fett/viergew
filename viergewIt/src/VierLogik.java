@@ -1,21 +1,10 @@
 public class VierLogik
 {
-    final int w;//width
-    final int h;//height
     int[][] game;//game array
     int turn = 0;//turn count
 
-    VierLogik()//standard
-    {
-        this.w=7;
-        this.h=6;
-        game = new int[w][h];
-    }
-
     VierLogik(int w,int h)//custom field
     {
-        this.w=w;
-        this.h=h;
         game = new int[w][h];
     }
 
@@ -33,7 +22,7 @@ public class VierLogik
 
     int setPos(int num)//calculate y-position for given x when set on
     {
-        if (num < 0 || num > w-1)//not in range
+        if (num < 0 || num > game.length-1)//not in range
         {
             return -1;
         }
@@ -77,7 +66,7 @@ public class VierLogik
 
     boolean nozero()//check for a full field
     {
-        for(int i=0;i<w;i++)
+        for(int i=0;i<game.length;i++)
         {
             if(setPos(i)!=-1)
             {
