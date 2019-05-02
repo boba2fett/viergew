@@ -2,10 +2,6 @@ import java.util.*;
 public class VierGame extends VierLogik
 {
     ArrayList<Integer> history=new ArrayList<Integer>();
-    VierGame()
-    {
-        super();
-    }
 
     VierGame(int w,int h)
     {
@@ -39,7 +35,7 @@ public class VierGame extends VierLogik
 
     int ai()
     {
-        AiMiniMax a=new AiMiniMax(turn,(ArrayList<Integer>)history.clone(),w,h);//give AI all important information
+        AiMiniMax a=new AiMiniMax(turn,(ArrayList<Integer>)history.clone(),game.length,game[0].length);//give AI all important information
         return a.aiTurn();
     }
 
