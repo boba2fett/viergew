@@ -10,14 +10,14 @@ class Test
     private final int turn;
     private final ArrayList<Integer> history;
     private final int w;
-    Test(int turn,ArrayList<Integer> history,int width)
+    private Test(int turn,ArrayList<Integer> history,int width)
     {
         this.turn=turn;
         this.history=history;
         w=width;
     }
 
-    public void testing()
+    private void testing()
     {
         final int deepness=10;
         int[]eval=new int[w];
@@ -38,7 +38,7 @@ class Test
 
     private boolean legal(int further)
     {
-        VierLogik vier=new VierLogik();
+        VierLogik vier=new VierLogik(7,6);
         for (int num : history)
         {
             vier.setOn(num);
@@ -48,7 +48,7 @@ class Test
 
     private VierLogik recreate(ArrayList<Integer> further)
     {
-        VierLogik vier=new VierLogik();
+        VierLogik vier=new VierLogik(7,6);
         for (int num : history)
         {
             vier.setOn(num);
@@ -62,7 +62,7 @@ class Test
 
     private VierLogik recreate(int further)
     {
-        VierLogik vier=new VierLogik();
+        VierLogik vier=new VierLogik(7,6);
         for (int num : history)
         {
             vier.setOn(num);
@@ -156,46 +156,5 @@ class Test
             }
         }
         return value;
-    }
-
-    int aiTurn()
-    {
-        final int deepness=7;
-        int[]eval=new int[w];
-        boolean[]use=new boolean[w];
-        for(int j=0;j<w;j++)
-        {
-            if(recreate(j).checkwinner()!=-1)
-            {
-                return j;
-            }
-            use[j]=legal(j);
-            if(use[j])
-            {
-                ArrayList<Integer> hist=new ArrayList<Integer>();
-                hist.add(j);
-                eval[j]=minimax(false,hist,deepness);
-            }
-        }
-
-        ArrayList<Integer> whynot=new ArrayList<Integer>();
-        for(int i=deepness;i>=-deepness;i--)
-        {
-            for(int j=0;j<w;j++)
-            {
-                if(use[j]&&eval[j]==i)
-                {
-                    whynot.add(j);
-                }
-            }
-            if(whynot.size()!=0)
-            {
-                int num = (int)(Math.random() * whynot.size());
-                return whynot.get(num);
-            }
-        }
-        whynot=possible();
-        int num = (int)(Math.random() * whynot.size());
-        return whynot.get(num);
     }
 }

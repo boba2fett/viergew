@@ -9,7 +9,7 @@ public class GameAuto
 
     private GameAuto()
     {
-        vier=new VierGame();
+        vier=new VierGame(7,6);
     }
 
     private void start()
@@ -18,7 +18,7 @@ public class GameAuto
         int wins2=0;
         for(int round=0;round<10;round++)
         {
-            vier=new VierGame();
+            vier=new VierGame(7,6);
             System.out.println("Runde "+round);
             do{
                 int num;

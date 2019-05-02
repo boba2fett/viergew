@@ -1,7 +1,7 @@
 import java.util.*;
 public class VierGame extends VierLogik
 {
-    ArrayList<Integer> history=new ArrayList<Integer>();
+    private ArrayList<Integer> history=new ArrayList<Integer>();
 
     VierGame(int w,int h)
     {

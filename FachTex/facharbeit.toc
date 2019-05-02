@@ -5,7 +5,8 @@
 \contentsline {subsection}{\numberline {2.2}Implementation}{1}{subsection.2.2}
 \contentsline {section}{\numberline {3}Implementation der KI}{1}{section.3}
 \contentsline {subsection}{\numberline {3.1}Taktik der KI}{1}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Schw\IeC {\"a}chen}{2}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Schw\IeC {\"a}chen}{3}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Effizienzbetrachtung}{3}{subsection.3.3}
 \contentsline {section}{\numberline {4}K\IeC {\"u}nstliche Intelligenz}{3}{section.4}
 \contentsline {subsection}{\numberline {4.1}Aktueller Stand}{3}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Ausblick}{3}{subsection.4.2}

@@ -64,7 +64,7 @@ public class VierLogik
         return -1;
     }
 
-    boolean nozero()//check for a full field
+    private boolean nozero()//check for a full field
     {
         for(int i=0;i<game.length;i++)
         {

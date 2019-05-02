@@ -10,7 +10,7 @@ public class Game
 
     private Game()
     {
-        vier=new VierGame();
+        vier=new VierGame(7,6);
     }
 
     private void start()
