@@ -221,7 +221,7 @@ class AiMiniMax//implementation of the Minimax-KI
             {
                 test=recreate(hist);//recreate the field of the game
 
-                if(test.setOn(i))//if set not possible value -43
+                if(test.setOn(i))//if set not possible: theoretical value
                 {
                     if(test.checkwinner()==-1)//next Turn interesting
                     {
@@ -251,7 +251,7 @@ class AiMiniMax//implementation of the Minimax-KI
             for(int i=0;i<w;i++)//for each field
             {
                 test=recreate(hist);//recreate the field of the game
-                if(test.setOn(i))//if set not possible value -43
+                if(test.setOn(i))//if set not possible: theoretical value
                 {
                     if(test.checkwinner()==-1)//next Turn interesting
                     {
