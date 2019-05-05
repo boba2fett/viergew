@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.11)  4 MAY 2019 00:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.11)  5 MAY 2019 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1106,48 +1106,48 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 110.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 110.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 110.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 110.
+(babel)             in language  on input line 111.
  [4]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 110.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 110.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 118.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 118.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 118.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 118.
  [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
  (./facharbeit.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
 Package rerunfilecheck Info: File `facharbeit.out' has not changed.
 (rerunfilecheck)             Checksum: 7B282339FCFA2B4D9ACDF3512C1F70B4;693.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
  ) 
 Here is how much of TeX's memory you used:
  26058 strings out of 494871
  637755 string characters out of 6178381
- 852232 words of memory out of 5000000
+ 853234 words of memory out of 5000000
  28955 multiletter control sequences out of 15000+600000
  15981 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1167,9 +1167,9 @@ st, replaced by a fixed one
  </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk>
  </home/mypc/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on facharbeit.pdf (7 pages, 112762 bytes).
+Output written on facharbeit.pdf (7 pages, 113550 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
+ 443 PDF objects out of 1000 (max. 8388607)
  155 compressed objects within 2 object streams
  24 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
