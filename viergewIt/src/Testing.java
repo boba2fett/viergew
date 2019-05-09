@@ -6,7 +6,7 @@ public class Testing
         int h=9;
         for(int w=5;w<=9;w+=2)
         {
-            System.out.println("w:"+w);
+            System.out.println("\nw:"+w);
             for(int d=1;d<10;d++)
             {
                 final long timeStart = System.currentTimeMillis();
@@ -14,7 +14,7 @@ public class Testing
                 a.aiTurn();
                 final long timeEnd = System.currentTimeMillis();
                 double time=(timeEnd - timeStart)/1000.0;
-                System.out.print(time+",");
+                System.out.println("("+d+","+time+")");
             }
         }
     }

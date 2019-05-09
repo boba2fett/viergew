@@ -35,7 +35,8 @@ public class VierGame extends VierLogik
 
     int ai()
     {
-        AiMiniMax a=new AiMiniMax(turn,(ArrayList<Integer>)history.clone(),game.length,game[0].length);//give AI all important information
+        AiMiniMaxPrint a=new AiMiniMaxPrint(turn,(ArrayList<Integer>)history.clone(),game.length,game[0].length);//give AI all important information
+        //AiMiniMax a=new AiMiniMax(turn,(ArrayList<Integer>)history.clone(),game.length,game[0].length);//give AI all important information
         return a.aiTurn();
     }
 

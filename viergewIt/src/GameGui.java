@@ -80,7 +80,7 @@ public class GameGui extends JFrame {
                 fields[x][y].setVisible(true);
                 fields[x][y].setEnabled(true);
                 fields[x][y].addActionListener(new myActionListener());        //Adding response event to buttons
-                fields[x][y].setPreferredSize(new Dimension(10, 10));
+                fields[x][y].setPreferredSize(new Dimension(5, 5));
             }
         }
         mainPanel.add(menu, BorderLayout.NORTH);
@@ -124,7 +124,7 @@ public class GameGui extends JFrame {
     {
         v= new VierGame(w,h);
         game=new JPanel(new GridLayout(h, w));
-        game.setPreferredSize(new Dimension(1000, 800));
+        game.setPreferredSize(new Dimension(500, 500));
         mainPanel.add(game, BorderLayout.SOUTH);
 
         buttons=new JButton[w][h];
@@ -140,7 +140,7 @@ public class GameGui extends JFrame {
                 buttons[x][y].setVisible(true);
                 buttons[x][y].setEnabled(false);
                 buttons[x][y].addActionListener(new myActionListener());        //Adding response event to buttons
-                buttons[x][y].setPreferredSize(new Dimension(10, 10));
+                buttons[x][y].setPreferredSize(new Dimension(5, 5));
             }
         }
 
@@ -240,7 +240,7 @@ public class GameGui extends JFrame {
                 fields[x][y].setVisible(true);
                 fields[x][y].setEnabled(true);
                 fields[x][y].addActionListener(new myActionListener());        //Adding response event to buttons
-                fields[x][y].setPreferredSize(new Dimension(10, 10));
+                fields[x][y].setPreferredSize(new Dimension(5, 5));
             }
         }
         mainPanel.add(menu, BorderLayout.NORTH);
@@ -268,7 +268,7 @@ public class GameGui extends JFrame {
                 buttons[x][y].setVisible(true);
                 buttons[x][y].setEnabled(false);
                 buttons[x][y].addActionListener(new myActionListener());        //Adding response event to buttons
-                buttons[x][y].setPreferredSize(new Dimension(10, 10));
+                buttons[x][y].setPreferredSize(new Dimension(5, 5));
             }
         }
 
