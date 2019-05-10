@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {3.3}Implementation}{3}{subsection.3.3}
 \contentsline {subsubsection}{\numberline {3.3.1}1. Beispiel}{4}{subsubsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.2}2.Beispiel}{6}{subsubsection.3.3.2}
-\contentsline {subsection}{\numberline {3.4}Effizienzbetrachtung}{6}{subsection.3.4}
-\contentsline {section}{\numberline {4}K\IeC {\"u}nstliche Intelligenz}{7}{section.4}
-\contentsline {subsection}{\numberline {4.1}Aktueller Stand}{8}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Ausblick}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {3.4}Effizienzbetrachtung}{8}{subsection.3.4}
+\contentsline {section}{\numberline {4}K\IeC {\"u}nstliche Intelligenz}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Aktueller Stand}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Ausblick}{10}{subsection.4.2}

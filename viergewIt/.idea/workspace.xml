@@ -6,22 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54ff9909-6b73-4346-bd5c-75f29621e0fa" name="Default Changelist" comment="produktiver Abend/nacht">
-      <change beforePath="$PROJECT_DIR$/../FachTex/facharbeit.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../FachTex/facharbeit.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FachTex/facharbeit.log" beforeDir="false" afterPath="$PROJECT_DIR$/../FachTex/facharbeit.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FachTex/facharbeit.out" beforeDir="false" afterPath="$PROJECT_DIR$/../FachTex/facharbeit.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FachTex/facharbeit.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../FachTex/facharbeit.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FachTex/facharbeit.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../FachTex/facharbeit.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FachTex/facharbeit.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../FachTex/facharbeit.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FachTex/facharbeit.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../FachTex/facharbeit.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/viergewIt/GameGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/viergewIt/GameGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/viergewIt/VierGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/viergewIt/VierGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AiMiniMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AiMiniMax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VierGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VierGame.java" afterDir="false" />
-    </list>
+    <list default="true" id="54ff9909-6b73-4346-bd5c-75f29621e0fa" name="Default Changelist" comment="produktiver Abend/nacht" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +18,7 @@
     <session id="-2134168833">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="16" />
           <entry key="project.open.time.5" value="1" />
@@ -205,7 +190,7 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="viergewit" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557424946357" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557425430654" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -289,8 +274,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1021" y="199" width="1926" height="1057" extended-state="7" />
-    <editor active="true" />
+    <frame x="1021" y="199" width="1926" height="1057" extended-state="6" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -304,7 +288,7 @@
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.32938644" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.32938644" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />

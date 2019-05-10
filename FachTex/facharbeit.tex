@@ -54,7 +54,7 @@
 	Neben dem Minimax-Algorithmus könnten auch vorberechnete Eröffnungszüge genutzt werden, aber diese unterscheiden sich für jede Spielfeldgröße. Einige Spiele gelten dadurch auch schon als gelöst:
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.7\linewidth]{w-h-viergew}
+		\includegraphics[width=0.4\linewidth, height=0.3\textheight]{w-h-viergew}
 		\caption{}
 		\label{fig:w-h-viergew}
 		\footnote{Tromp, John  \glqq John's Connect Four Playground \grqq{} \url{http://tromp.github.io/c4/c4.html} Stand: 01.05.2019}
@@ -219,6 +219,141 @@ child{
 	Hier ist das Baumdiagramm zu 0 als ersten Zug der KI, in dem alle Simulationen angeführt sind, die gemacht werden. Endet ein Pfad im Nichts ist die Maximale Tiefe erreicht, also wie Unentschieden. Steht ein D am Ende eines Pfades ist es eine Niederlage. Blau eingefärbte Knoten sind Maximierende und Orange eingefärbte Minimierende. Fangen wir von links an. Die Maximale Tiefe ist erreicht, also ist der Wert für den Pfad 0-1-1 (Von oben nach unten gelesen) erst mal das Maximum 0. Der nächste Wert von rechts ist wieder 0, also keine Veränderung. Der darauf folgende ist eine Niederlage aber, da es ein maximierender Knoten ist, zählt hier das Maximum, 0. Die beiden Knoten daneben liefern kein anderes Ergebnis und dadurch wird der Wert des Minimierenden Knotens 0-1 auch 0. Für den Knoten 0-2 gilt das Selbe. Der Knoten 0-3 mündet direkt in eine Niederlage und damit einen Negativen Wert (hier -2, da Wert=-Suchtiefe+aktuelle Tiefe). Das Minimum von 0-1, 0-2 und 0-3 ist also -2.\\
 	Bei dem Start mit dem Knoten 3 ergibt sich nachher ein Wert von 0, der dann den anderen (0,1,2) bevorzugt wird. Am Ende wird im Log noch niedergeschrieben, dass beim Wert 0 das Feld 3 eine Möglichkeit ist, welches dann auch ausgewählt wird.
 	\subsubsection{2.Beispiel}
+	Beim zweiten Beispiel wollen wir nun eine Situation herbei führen, bei dem wir in der Zwickmühle sitzen.\\
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.4\linewidth, height=0.3\textheight]{maybe/fach2}
+		\caption{}
+		\label{fig:fach2}
+	\end{figure}
+	Nun setzen wir als Spieler auf 2:0 um nicht zu verlieren.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.4\linewidth, height=0.3\textheight]{maybe/fach3}
+		\caption{}
+		\label{fig:fach3}
+	\end{figure}\\
+	Und die KI setzt auf 3:1 und wir haben keine Chance mehr zu Gewinnen. Setzen wir auf 4:1 setzt die KI im nächsten Zug auf 4:0 und gewinnt. Setzten wir hingegen nicht auf 4:1 setzt die KI auf dieses Feld und gewinnt ebenfalls.
+	Schauen wir uns nun wieder den Suchbaum an. Er geht hervor aus fach2-3\\
+	
+	\begin{tikzpicture}[
+	max/.style={rectangle, draw=none, rounded corners=1mm, fill=blue, drop shadow,
+		text centered, anchor=north, text=white},
+	min/.style={circle, draw=none, fill=orange, circular drop shadow,
+		text centered, anchor=north, text=white},
+	beginn/.style={circle, draw=none, fill=red, circular drop shadow,
+		text centered, anchor=north, text=white},
+	level distance=0.5cm, growth parent anchor=south
+	]
+	\node (n) [max,sibling distance=9cm] {Anfang}
+	child{
+		[sibling distance=5cm]
+		node (c) [beginn] {3}
+		child{
+			[sibling distance=1.7cm]
+			node (c1) [min] {1}
+			child{[sibling distance=0.5cm]
+				node (c13) [max] {3}
+				child{
+					node (c134) [min] {4}
+					child{
+						node (c1344) [max] {4}
+						child{
+							node (c1344W) [max] {W}
+						}
+					}
+				}
+			}
+			child{[sibling distance=0.5cm]
+				node (c14) [max] {4}
+				child{
+					node (c14W) [max]{W}
+				}
+			}
+		}
+		child{
+			[sibling distance=1.7cm]
+			node (c3) [min] {3}
+			child{[sibling distance=0.5cm]
+				node (c31) [max] {1}
+				child{
+					node (c314) [min] {4}
+					child{
+						node (c3144) [max] {4}
+						child{
+							node (c3144W) [max] {W}
+						}
+					}
+				}
+			}
+		child{[sibling distance=0.5cm]
+			node (c34) [max] {4}
+			child{[sibling distance=0.5cm]
+				node (c34W) [max] {W}
+			}
+		}
+		}
+		child{[sibling distance=2cm]
+			node (c4) [min] {4}
+			child{[sibling distance=1cm]
+				node (c41) [max] {1}
+				child{
+					node (c413) [min] {3}
+					child{
+						node (c4134) [max] {4}
+						child{
+							node (c4134W) [max] {W}
+						}
+					}
+				child{
+					node (c4143) [max] {3}
+					child{
+						node (c4143T) [max] {T}
+					}
+				}
+				}
+			}
+		child{[sibling distance=1cm]
+			node (c43) [max] {3}
+			child{
+				node (c431) [min] {1}
+				child{
+					node (c4314) [max] {4}
+					child{
+						node (c4314W) [max] {W}
+					}
+				}
+			}
+		child{
+			node (c434) [min] {4}
+			child{
+				node (c4341) [max] {1}
+				child{
+					node (c4341T) [max] {T}
+				}
+			}
+		}
+		}
+			child{
+				node (c44) [max] {4}
+				child{
+					node (c44W) [max] {W}
+				}
+			}
+		}
+	}
+	;
+	\end{tikzpicture}
+	\\
+	Oben haben wir nun die Wahl des Feldes 3 die nächste Ebene ist minimierend. Auf der nächsten Ebene ist aber wieder alles Maximierend und es tritt bei jeder Möglichkeit, durch einen schlauen Zug, ein Sieg für die KI ein. Der errechnete Wert ist dabei dann 3 (Suchtiefe - aktuelle Suchtiefe) und dieser Wert wird von keiner der anderen möglichen Felder übertroffen. \\
+	Hier das weitere Spiel bis zum Sieg der KI:\\
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.4\linewidth, height=0.3\textheight]{maybe/fach4}
+		\caption{}
+		\label{fig:fach4}
+	\end{figure}
+	
 	\subsection{Effizienzbetrachtung}
 	Um mehr Züge zu simulieren, ist erheblich mehr Rechenleistung erforderlich. Die Komplexität steigt nahezu exponentiell, aber je weiter das Spiel fortgeschritten ist und je weniger Möglichkeiten es gibt, desto schneller wird der Algorithmus. Ich habe Simulationen mit verschiedenen Feldgrößen durchgeführt und habe den ersten Zug von der KI berechnen lassen. Dabei habe ich die Zeit gemessen und darauf basierend passende Suchtiefen gewählt, um die Zeit bei weniger als 10 Sekunden zu belassen. Hätte ich die vordefinierten Pfade genommen, wäre deutlich an Rechenzeit gespart worden, jedoch bräuchte man zum Erstellen dieser sehr lange bzw. würde es den Rahmen dieser Facharbeit sprengen. Auch wäre es möglich anstatt der VierLogik Klasse auch einfach nur kopierte Arrays zu verwenden, aber dabei ist es schwer darauf zu achten, dass keines dieser Arrays verändert wird.\\
 	Aber nun zur Effizienz bei verschiedenen Feldgrößen. Da die Höhe nicht so ausschlaggebend ist, wird hier nur betrachtet wie sich die Ausführungszeit verändert, wenn die Suchtiefe und die Feldbreite variiert werden. Die KI versucht in jedem Fall, den ersten Zug eines Spieles zu berechnen.\\
