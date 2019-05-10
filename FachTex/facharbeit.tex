@@ -54,7 +54,7 @@
 	Neben dem Minimax-Algorithmus könnten auch vorberechnete Eröffnungszüge genutzt werden, aber diese unterscheiden sich für jede Spielfeldgröße. Einige Spiele gelten dadurch auch schon als gelöst:
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.4\linewidth, height=0.3\textheight]{w-h-viergew}
+		\includegraphics[width=0.5\linewidth, height=0.3\textheight]{w-h-viergew}
 		\caption{}
 		\label{fig:w-h-viergew}
 		\footnote{Tromp, John  \glqq John's Connect Four Playground \grqq{} \url{http://tromp.github.io/c4/c4.html} Stand: 01.05.2019}
@@ -359,7 +359,8 @@ child{
 	Aber nun zur Effizienz bei verschiedenen Feldgrößen. Da die Höhe nicht so ausschlaggebend ist, wird hier nur betrachtet wie sich die Ausführungszeit verändert, wenn die Suchtiefe und die Feldbreite variiert werden. Die KI versucht in jedem Fall, den ersten Zug eines Spieles zu berechnen.\\
 	Im Folgenden sind die Graphen der Ausführungszeit im Bezug auf die Suchtiefe dargestellt. Von oben nach unten mit den Feldbreiten 9,7,5. Es fällt deutlich auf, dass bis zu einer Suchtiefe von 5 kaum Unterschiede in der Rechenzeit auftreten. Von da an werden die Unterschiede pro weiterer Suchtiefe immer größer und steigen exponentiell. Der Wert für die Feldbreite 9 und Suchtiefe 9 fehlt, da ich die Messung nach 2 Stunden abgebrochen habe. Die Tests wurden durchgeführt mit der Klasse Testing.\\
 	
-		\centering
+		\begin{minipage}{\textwidth}
+			\centering
 		\begin{tikzpicture}
 		\begin{axis}[title={Ausführungszeit}]
 		\addplot coordinates{%5
@@ -396,11 +397,20 @@ child{
 		};
 		\end{axis}
 		\end{tikzpicture}
-	
+		\end{minipage}
 	\section{Künstliche Intelligenz}
-	\textit{Definition}
+	\subsection{Definition}
+	Das große Problem beim Begriff künstliche Intelligenz ist, dass es keine allgemeingültige Definition von Intelligenz gibt. Eine Möglichkeit ist es, Intelligenz als Fähigkeit Probleme zu lösen zu sehen. Darunter berücksichtigt wäre auch, dass es verschiedene Arten von Intelligenz gibt. So beschriebt es die \glqq Theorie der multiplen Intelligenzen \grqq{} von Howard Gardner. So habe jeder Mensch eine Mischung aus sieben Intelligenzarten.\footnote{Bulenda, Max \glqq Künstliche Intelligenz: Definition, Erklärung und Beispiele \grqq{}\url{https://simplyki.de/kuenstliche-intelligenz-definition-erklaerung-und-beispiele/} Stand: 10.05.2019} 
+	Darauf achtend schauen wir uns den Wikipedia Artikel an, da dort meistens eine gesellschaftlich anerkannte Definition steht.\glqq Künstliche Intelligenz (KI, auch Artifizielle Intelligenz (AI bzw. A. I.), englisch artificial intelligence, AI) ist ein Teilgebiet der Informatik, welches sich mit der Automatisierung intelligenten Verhaltens und dem Maschinellen Lernen befasst. \grqq{} \footnote{Wikimedia Foundation Inc. \glqq Künstliche Intelligenz \grqq{} \url{https://de.wikipedia.org/wiki/K\%C3\%BCnstliche_Intelligenz} Stand: 10.05.2019 }
+	Etwas ähnliches  ist auch im Gabler Wirtschaftslexikon zu finden: \glqq Erforschung intelligenten Problemlösungsverhaltens sowie die Erstellung intelligenter Computersysteme. Künstliche Intelligenz (KI) beschäftigt sich mit Methoden, die es einem Computer ermöglichen, solche Aufgaben zu lösen, die, wenn sie vom Menschen gelöst werden, Intelligenz erfordern. \grqq{} \footnote{Prof. Dr. Richard Lackes und Dr. Markus Siepermann \glqq Künstliche Intelligenz (KI) \grqq{} \url{https://wirtschaftslexikon.gabler.de/definition/kuenstliche-intelligenz-ki-40285} Stand: 10.05.2019 }
+	Und auch bei Spektrum steht etwas ähnliches: \glqq Die künstliche Intelligenz (Abk. KI, \textit{E} artificial intelligence, Abk. AI) ist ein Teilgebiet der Informatik, welches sich mit der Erforschung von Mechanismen des intelligenten menschlichen Verhaltens befaßt (Intelligenz). Dieses geschieht durch Simulation mit Hilfe künstlicher Artefakte, gewöhnlich mit Computerprogrammen auf einer Rechenmaschine (Computersimulation).\grqq{} \footnote{Wichert, Andreas \glqq Künstliche Intelligenz \grqq{} \url{https://www.spektrum.de/lexikon/neurowissenschaft/kuenstliche-intelligenz/6810} Stand: 10.05.2019 }
+	Dementsprechend kann man sagen, dass es sich wohl um die Nachahmung von menschlicher Intelligenz handelt, die durch Computersimulation oder andere Mechanismen erreicht wird.\\
+	Damit lässt sich auch für einen Computergegner der Begriff künstliche Intelligenz wählen, da hier durch Computersimulation menschliche Intelligenz nachgeahmt wird.
+	\subsection{Machine Learning}
+	Ein Teilgebiet der künstlichen Intelligenz ist das Machine Learning ,maschinelles Lernen oder nur ML. Dabei geht es darum aus vorhandenen Daten Muster und Gesetzmäßigkeiten abzuleiten, die dann bei ähnlichen Daten verwendet werden können. Solche lernenden Systeme können über verschiedene wege angelernt werden, aber vor allem die Fortschritte im Bereich Big Data gaben diesem Themenfeld  eine enorme Bedeutung, da nun viele Daten zur Verfügung stehen an denen gelernt werden kann.\footnote{Luber, Stefan \glqq Was ist Machine Learning? \grqq{} \url{https://www.bigdata-insider.de/was-ist-machine-learning-a-592092/} Stand:11.05.2019}
 	\subsection{Aktueller Stand}
-	\textit{tensorflow,machine learning}
+	Das heutige Leben wäre anders, wenn man auf künstliche Intelligenz verzichten würde. Das mag naheliegend sein bei Google Übersetzer oder anderer Sprachverarbeitung. Aber auch bei Verkehrsmitteln, wie Flugzeugen wird auf KI gesetzt. Man müsse also, um auf KI zu verzichten, mit einer Kutsche fahren. \footnote{Kersting, Pia \glqq Künstliche Intelligenz (KI): Der aktuelle Stand der Technik \grqq{} \url{https://lead-conduct.de/2017/11/21/kuenstliche-intelligenz-ki-der-aktuelle-stand-der-technik/} Stand:11.05.2019}
+	es sollte aber im Blick gehalten werden, dass KI unser Leben deutlich vereinfachen kann. So wurde schon 2018 bei der Google I/O demonstriert, wie es aussehen könnte, wenn der Google Assistant einen Termin für seinen Nutzer ausmacht.\footnote{Engelien, Marco \glqq Googles Assistant kann bald euren Friseur anrufen und einen Termin machen \grqq{} \url{https://curved.de/news/bei-anruf-google-der-assistant-macht-bald-termine-fuer-euch-ab-605280} Stand: 11.05.2019}
 	\subsection{Ausblick}
 	\textit{Filme usw. (Wargames,Terminator,2001,I Robot)}
 	

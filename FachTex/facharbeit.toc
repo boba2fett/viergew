@@ -11,5 +11,7 @@
 \contentsline {subsubsection}{\numberline {3.3.2}2.Beispiel}{6}{subsubsection.3.3.2}
 \contentsline {subsection}{\numberline {3.4}Effizienzbetrachtung}{8}{subsection.3.4}
 \contentsline {section}{\numberline {4}K\IeC {\"u}nstliche Intelligenz}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}Aktueller Stand}{9}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Ausblick}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.1}Definition}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Machine Learning}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Aktueller Stand}{11}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Ausblick}{11}{subsection.4.4}
