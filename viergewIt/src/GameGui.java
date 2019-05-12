@@ -6,12 +6,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
+/**
+ * UI for connect four game
+ */
 public class GameGui extends JFrame {
 
     public static void main(String[] args) {
         new GameGui();        //main method and instantiating tic tac object and calling initialize function
     }
-
     private VierGame v;
     private boolean ready=false;
     private int players;
@@ -66,7 +68,7 @@ public class GameGui extends JFrame {
         int w=6;
         int h=6;
         menu= new JPanel(new GridLayout(h, w));
-        menu.setPreferredSize(new Dimension(1000, 1000));
+        menu.setPreferredSize(new Dimension(500, 500));
         fields=new JButton[w][h];
 
         for (int y = 0;y < h; y++)                //Create grid
@@ -100,7 +102,7 @@ public class GameGui extends JFrame {
     private void resetMenu() {//clear menu to add new things
         menu.setVisible(false);
         menu = new JPanel(new GridLayout(1, 3));
-        menu.setPreferredSize(new Dimension(1000, 100));
+        menu.setPreferredSize(new Dimension(500, 100));
         mainPanel.add(menu, BorderLayout.NORTH);
     }
 
@@ -226,7 +228,7 @@ public class GameGui extends JFrame {
         int w=6;
         int h=6;
         menu= new JPanel(new GridLayout(h, w));
-        menu.setPreferredSize(new Dimension(1000, 1000));
+        menu.setPreferredSize(new Dimension(500, 500));
         fields=new JButton[w][h];
 
         for (int y = 0;y < h; y++)                //Create grid
@@ -252,7 +254,7 @@ public class GameGui extends JFrame {
         game.setVisible(false);
         v= new VierGame(w,h);
         game=new JPanel(new GridLayout(h, w));
-        game.setPreferredSize(new Dimension(1000, 800));
+        game.setPreferredSize(new Dimension(500, 500));
         mainPanel.add(game, BorderLayout.SOUTH);
 
         buttons=new JButton[w][h];

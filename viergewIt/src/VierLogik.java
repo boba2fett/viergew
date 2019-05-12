@@ -1,13 +1,29 @@
+/**
+ * Simple connect-4 game
+ */
 public class VierLogik
 {
+    /**
+     * Game field
+     */
     int[][] game;//game array
+    /**
+     * Turn counter
+     */
     int turn = 0;//turn count
 
+    /**
+     * @param w Width of Game Field
+     * @param h Height of Game Field
+     */
     VierLogik(int w,int h)//custom field
     {
         game = new int[w][h];
     }
-
+    /**
+     * @param num Field to set On
+     * @return true Success
+     */
     public boolean setOn(int num)//set on a given number
     {
         int pos=setPos(num);
@@ -19,7 +35,10 @@ public class VierLogik
         }
         return false;//it didn't worked
     }
-
+    /**
+     * @param num Field to set on
+     * @return Which position in the array to use when set on num
+     */
     int setPos(int num)//calculate y-position for given x when set on
     {
         if (num < 0 || num > game.length-1)//not in range
@@ -42,6 +61,9 @@ public class VierLogik
         return -1;//if no zero in row=> not possible
     }
 
+    /**
+     * @return Check for any winner. -1 is no winner
+     */
     int checkwinner()//check who has won
     {
         for (int sp = 1; sp <= 2; sp++)
@@ -64,6 +86,9 @@ public class VierLogik
         return -1;
     }
 
+    /**
+     * @return is the Field full/no zeros on the whole array
+     */
     private boolean nozero()//check for a full field
     {
         for(int i=0;i<game.length;i++)
@@ -76,6 +101,9 @@ public class VierLogik
         return true;
     }
 //checking for 4 in a row
+    /**
+     * @return checking for 4 in a line
+     */
     boolean checkLines(int x, int y, int sp)// -
     {
         if (x + 4 > game.length)
@@ -92,6 +120,9 @@ public class VierLogik
         return true;
     }
 
+    /**
+     * @return checking for 4 in a column
+     */
     boolean checkRows(int x, int y, int sp)// |
     {
         if (y + 4 > game[x].length)
@@ -107,7 +138,9 @@ public class VierLogik
         }
         return true;
     }
-
+    /**
+     * @return checking for 4 in a slash form
+     */
     boolean checkSlash(int x, int y, int sp)// /
     {
         if (x + 4 > game.length || y + 4 > game[x].length)
@@ -123,7 +156,9 @@ public class VierLogik
         }
         return true;
     }
-
+    /**
+     * @return checking for 4 in a backslash form
+     */
     boolean checkBackslash(int x, int y, int sp)// \
     {
         if (x + 4 > game.length || y - 3 < 0)

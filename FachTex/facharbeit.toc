@@ -3,7 +3,8 @@
 \contentsline {section}{\numberline {2}Vier Gewinnt}{1}{section.2}
 \contentsline {subsection}{\numberline {2.1}Spielidee}{1}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Implementation}{1}{subsection.2.2}
-\contentsline {section}{\numberline {3}Die KI}{2}{section.3}
+\contentsline {subsection}{\numberline {2.3}Das Programm}{1}{subsection.2.3}
+\contentsline {section}{\numberline {3}Die KI (k\IeC {\"u}nstliche Intelligenz)}{2}{section.3}
 \contentsline {subsection}{\numberline {3.1}Taktik der KI}{2}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Schw\IeC {\"a}chen}{3}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Implementation}{3}{subsection.3.3}
@@ -13,5 +14,6 @@
 \contentsline {section}{\numberline {4}K\IeC {\"u}nstliche Intelligenz}{9}{section.4}
 \contentsline {subsection}{\numberline {4.1}Definition}{9}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Machine Learning}{10}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Aktueller Stand}{11}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Ausblick}{11}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.3}Aktueller Stand}{10}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Ausblick}{10}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Fazit}{11}{subsection.4.5}

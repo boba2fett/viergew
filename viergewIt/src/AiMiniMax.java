@@ -1,4 +1,8 @@
 import java.util.*;
+
+/**
+ * Class for the AI of the connect four game
+ */
 class AiMiniMax//implementation of the Minimax-KI
 {
     private final int turn;//needed for choosing player
@@ -154,6 +158,10 @@ class AiMiniMax//implementation of the Minimax-KI
         deepness=deep;
     }
 
+    /**
+     * @param further Field to simulate to set On
+     * @return is the step further possible
+     */
     private boolean legal(int further)//set On further possible when recreated
     {
         VierLogik vier=new VierLogik(w,h);
@@ -164,6 +172,10 @@ class AiMiniMax//implementation of the Minimax-KI
         return vier.setOn(further);
     }
 
+    /**
+     * @param further History of Fields set on
+     * @return Vierlogik Object with history+further
+     */
     private VierLogik recreate(ArrayList<Integer> further)//recreate a Game with addition of the turns in further
     {
         VierLogik vier=new VierLogik(w,h);
@@ -177,7 +189,10 @@ class AiMiniMax//implementation of the Minimax-KI
         }
         return vier;
     }
-
+    /**
+     * @param further Field to set on for the VierLogik object
+     * @return Vierlogik Object with history+further
+     */
     private VierLogik recreate(int further)//recreate a Game with addition of further
     {
         VierLogik vier=new VierLogik(w,h);
@@ -190,6 +205,9 @@ class AiMiniMax//implementation of the Minimax-KI
         return vier;
     }
 
+    /**
+     * @return All possible Fields
+     */
     private ArrayList<Integer> possible()//should never be used, but in case...
     {
         ArrayList<Integer> poss=new ArrayList<Integer>();
@@ -203,6 +221,12 @@ class AiMiniMax//implementation of the Minimax-KI
         return poss;
     }
 
+    /**
+     * @param maximizingPlayer max or min round
+     * @param hist history for the recursion
+     * @param depth depth of the search
+     * @return evaluated value
+     */
     private int minimax(boolean maximizingPlayer, ArrayList<Integer> hist, int depth)//main minimax-algorithm
     {
         if(depth==0)//max deepness is 0 for a tie
@@ -290,6 +314,10 @@ class AiMiniMax//implementation of the Minimax-KI
         return value;//evaluated value for game situation
     }
 
+    /**
+     * interface for outside
+     * @return Turn AI has decided to make
+     */
     int aiTurn()//only method to be used from outside
     {
         int[]eval=new int[w];//store the values for setting on field 0 to w-1

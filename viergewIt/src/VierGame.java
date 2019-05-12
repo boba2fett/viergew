@@ -1,6 +1,12 @@
 import java.util.*;
+/**
+ *
+ */
 public class VierGame extends VierLogik
 {
+    /**
+     * History of turns made
+     */
     private ArrayList<Integer> history=new ArrayList<Integer>();
 
     VierGame(int w,int h)
@@ -8,6 +14,11 @@ public class VierGame extends VierLogik
         super(w,h);
     }
 
+    /**
+     * @param num Field to set on
+     * @return true Success
+     */
+    @Override
     public boolean setOn(int num)
     {
         int pos=setPos(num);
@@ -21,6 +32,9 @@ public class VierGame extends VierLogik
         return false;
     }
 
+    /**
+     * Output for console game
+     */
     void out()//output for console game
     {
         for (int y = 0; y < game[0].length ; y++)
@@ -33,18 +47,27 @@ public class VierGame extends VierLogik
         }
     }
 
+    /**Ai Interface
+     * @return Field AI wants to set on
+     */
     int ai()
     {
-        AiMiniMaxPrint a=new AiMiniMaxPrint(turn,(ArrayList<Integer>)history.clone(),game.length,game[0].length);//give AI all important information
-        //AiMiniMax a=new AiMiniMax(turn,(ArrayList<Integer>)history.clone(),game.length,game[0].length);//give AI all important information
+        //AiMiniMaxPrint a=new AiMiniMaxPrint(turn,(ArrayList<Integer>)history.clone(),game.length,game[0].length);//give AI all important information
+        AiMiniMax a=new AiMiniMax(turn,(ArrayList<Integer>)history.clone(),game.length,game[0].length);//give AI all important information
         return a.aiTurn();
     }
 
+    /**
+     * @return total turns of the Game
+     */
     int getTurns()
     {
         return turn;
     }
 
+    /**Where was the win
+     * @return coordinates of the winning 4 Fields
+     */
     int[][] winwhere()//where has been won
     {
         int[][] arr=new int[4][2];//4 x:y
