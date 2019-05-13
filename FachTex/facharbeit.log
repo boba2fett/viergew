@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.11)  14 MAY 2019 00:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.11)  14 MAY 2019 00:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1129,7 +1129,7 @@ your preamble.
  on input line 24.
 
 \c@lstlisting=\count144
-<LogoGymnasiumMariengarden.png, id=111, 225.84375pt x 225.84375pt>
+<LogoGymnasiumMariengarden.png, id=115, 225.84375pt x 225.84375pt>
 File: LogoGymnasiumMariengarden.png Graphic file (type png)
 <use LogoGymnasiumMariengarden.png>
 Package pdftex.def Info: LogoGymnasiumMariengarden.png  used on input line 36.
@@ -1138,7 +1138,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 71.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 71.
-<Viergewinnt.jpg, id=112, 4143.48pt x 2330.7075pt>
+<Viergewinnt.jpg, id=116, 4143.48pt x 2330.7075pt>
 File: Viergewinnt.jpg Graphic file (type jpg)
 <use Viergewinnt.jpg>
 Package pdftex.def Info: Viergewinnt.jpg  used on input line 76.
@@ -1240,7 +1240,7 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 120.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<maybe/Klassendiagramme.png, id=147, 346.29375pt x 400.49625pt>
+<maybe/Klassendiagramme.png, id=152, 346.29375pt x 400.49625pt>
 File: maybe/Klassendiagramme.png Graphic file (type png)
 <use maybe/Klassendiagramme.png>
 Package pdftex.def Info: maybe/Klassendiagramme.png  used on input line 125.
@@ -1292,7 +1292,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 134.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 134.
-<w-h-viergew.png, id=164, 296.10625pt x 270.00874pt>
+<w-h-viergew.png, id=169, 296.10625pt x 270.00874pt>
 File: w-h-viergew.png Graphic file (type png)
 <use w-h-viergew.png>
 Package pdftex.def Info: w-h-viergew.png  used on input line 141.
@@ -1328,7 +1328,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 150.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 150.
-<maybe/KlassendiagrammKI.png, id=172, 346.29375pt x 175.65625pt>
+<maybe/KlassendiagrammKI.png, id=177, 346.29375pt x 175.65625pt>
 File: maybe/KlassendiagrammKI.png Graphic file (type png)
 <use maybe/KlassendiagrammKI.png>
 Package pdftex.def Info: maybe/KlassendiagrammKI.png  used on input line 154.
@@ -1412,12 +1412,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 228.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 228.
-<maybe/fach0.png, id=253, 528.97626pt x 686.565pt>
+<maybe/fach0.png, id=258, 528.97626pt x 686.565pt>
 File: maybe/fach0.png Graphic file (type png)
 <use maybe/fach0.png>
 Package pdftex.def Info: maybe/fach0.png  used on input line 233.
 (pdftex.def)             Requested size: 220.50577pt x 295.89815pt.
-<maybe/fach1.png, id=254, 528.97626pt x 686.565pt>
+<maybe/fach1.png, id=259, 528.97626pt x 686.565pt>
 File: maybe/fach1.png Graphic file (type png)
 <use maybe/fach1.png>
 Package pdftex.def Info: maybe/fach1.png  used on input line 240.
@@ -1481,12 +1481,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 374.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 374.
-<maybe/fach2.png, id=333, 445.665pt x 682.55pt>
+<maybe/fach2.png, id=338, 445.665pt x 682.55pt>
 File: maybe/fach2.png Graphic file (type png)
 <use maybe/fach2.png>
 Package pdftex.def Info: maybe/fach2.png  used on input line 378.
 (pdftex.def)             Requested size: 176.40636pt x 221.93027pt.
-<maybe/fach3.png, id=334, 445.665pt x 682.55pt>
+<maybe/fach3.png, id=339, 445.665pt x 682.55pt>
 File: maybe/fach3.png Graphic file (type png)
 <use maybe/fach3.png>
 Package pdftex.def Info: maybe/fach3.png  used on input line 385.
@@ -1505,7 +1505,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 391.
 [11 <./maybe/fach2.png> <./maybe/fach3.png>]
-<maybe/fach4.png, id=359, 445.665pt x 682.55pt>
+<maybe/fach4.png, id=364, 445.665pt x 682.55pt>
 File: maybe/fach4.png Graphic file (type png)
 <use maybe/fach4.png>
 Package pdftex.def Info: maybe/fach4.png  used on input line 510.
@@ -1704,32 +1704,26 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 600.
 
-Underfull \hbox (badness 10000) in paragraph at lines 601--618
+Underfull \hbox (badness 10000) in paragraph at lines 601--609
+
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 609.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 609.
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--618
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 601--618
+Underfull \hbox (badness 10000) in paragraph at lines 610--618
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 601--618
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 601--618
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 601--618
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 601--618
+Underfull \hbox (badness 10000) in paragraph at lines 610--618
 
  []
 
@@ -1757,14 +1751,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 618.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 618.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 618.
 Package rerunfilecheck Info: File `facharbeit.out' has not changed.
-(rerunfilecheck)             Checksum: EF2969C4B01E549C145F9531B87FF0A0;1246.
+(rerunfilecheck)             Checksum: 420F55B5DF2D95B10FE6219C1BD98037;1315.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 618.
  ) 
 Here is how much of TeX's memory you used:
- 29756 strings out of 494871
- 699393 string characters out of 6178381
- 912686 words of memory out of 5000000
- 32449 multiletter control sequences out of 15000+600000
+ 29758 strings out of 494871
+ 699413 string characters out of 6178381
+ 912687 words of memory out of 5000000
+ 32450 multiletter control sequences out of 15000+600000
  60745 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,20n,103p,1415b,2251s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1778,10 +1772,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on facharbeit.pdf (20 pages, 4607331 bytes).
+Output written on facharbeit.pdf (20 pages, 4607677 bytes).
 PDF statistics:
- 572 PDF objects out of 1000 (max. 8388607)
- 373 compressed objects within 4 object streams
- 128 named destinations out of 1000 (max. 500000)
- 511 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 577 PDF objects out of 1000 (max. 8388607)
+ 378 compressed objects within 4 object streams
+ 129 named destinations out of 1000 (max. 500000)
+ 519 words of extra memory for PDF output out of 10000 (max. 10000000)
 
