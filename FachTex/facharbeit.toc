@@ -1,19 +1,21 @@
 \babel@toc {ngerman}{}
-\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
-\contentsline {section}{\numberline {2}Vier Gewinnt}{1}{section.2}
-\contentsline {subsection}{\numberline {2.1}Spielidee}{1}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Implementation}{1}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Das Programm}{1}{subsection.2.3}
-\contentsline {section}{\numberline {3}Die KI (k\IeC {\"u}nstliche Intelligenz)}{2}{section.3}
-\contentsline {subsection}{\numberline {3.1}Taktik der KI}{2}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Schw\IeC {\"a}chen}{3}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Implementation}{3}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}1. Beispiel}{4}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}2.Beispiel}{6}{subsubsection.3.3.2}
-\contentsline {subsection}{\numberline {3.4}Effizienzbetrachtung}{8}{subsection.3.4}
-\contentsline {section}{\numberline {4}K\IeC {\"u}nstliche Intelligenz}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}Definition}{9}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Machine Learning}{10}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Aktueller Stand}{10}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Ausblick}{10}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Fazit}{11}{subsection.4.5}
+\contentsline {section}{\numberline {1}Einleitung}{2}{section.1}
+\contentsline {section}{\numberline {2}Vier Gewinnt}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Spielidee}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Implementation}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Das Programm}{4}{subsection.2.3}
+\contentsline {section}{\numberline {3}Die KI (k\IeC {\"u}nstliche Intelligenz) des Vier Gewinnt Spiels}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Taktik der KI}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Schw\IeC {\"a}chen}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Implementation}{5}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Erstes Beispiel}{8}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Zweites Beispiel}{11}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Effizienzbetrachtung}{13}{subsection.3.4}
+\contentsline {section}{\numberline {4}K\IeC {\"u}nstliche Intelligenz}{14}{section.4}
+\contentsline {subsection}{\numberline {4.1}Definition}{14}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Machine Learning}{15}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Aktueller Stand}{15}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Ausblick}{15}{subsection.4.4}
+\contentsline {section}{\numberline {5}Fazit}{17}{section.5}
+\contentsline {section}{\numberline {6}Quellen-/ Literaturverzeichnis}{18}{section.6}
+\contentsline {section}{\numberline {7}Bilderverzeichnis}{18}{section.7}

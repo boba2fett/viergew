@@ -1,6 +1,7 @@
 import java.util.*;
 /**
- *
+ *extended VierLogik
+ * adds Interface for ai and stores history
  */
 public class VierGame extends VierLogik
 {

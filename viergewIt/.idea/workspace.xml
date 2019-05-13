@@ -14,23 +14,34 @@
       <change beforePath="$PROJECT_DIR$/../FachTex/facharbeit.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../FachTex/facharbeit.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FachTex/facharbeit.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../FachTex/facharbeit.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FachTex/facharbeit.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../FachTex/facharbeit.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/Ai2$outstandingMoveException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/AiMinimax$outstandingMoveException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/AiMinimax.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/AiMinimax.ctxt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/AiMinimax.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/Game.ctxt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/GameAuto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/GameAuto.ctxt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/GameAuto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/VierGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/VierGame.ctxt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/VierGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/VierLogik.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/VierLogik.ctxt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/VierLogik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewBj/package.bluej" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../viergewIt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../viergewIt.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/viergewIt_jar/viergewIt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/viergewIt_jar/viergewIt.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/viergewIt/AiMiniMax.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/viergewIt/AiMiniMax.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/viergewIt/GameAuto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/viergewIt/GameGui$myActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/viergewIt/GameGui$myActionListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/viergewIt/GameGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/viergewIt/GameGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/viergewIt/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/viergewIt/VierGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/viergewIt/VierGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/viergewIt/VierLogik.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/viergewIt/VierLogik.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/viergewIt/testting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/viergewIt/AiMiniMax.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AiMiniMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AiMiniMax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameAuto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AiMiniMaxPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AiMiniMaxPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/VierGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VierGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VierLogik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VierLogik.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,19 +54,19 @@
     <session id="-2134168833">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="28" />
+          <entry key="project.closed" value="31" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.3" value="24" />
-          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.3" value="25" />
+          <entry key="project.open.time.4" value="4" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.opened" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MF" value="1" />
           <entry key="class" value="2" />
-          <entry key="java" value="28" />
+          <entry key="java" value="33" />
           <entry key="puml" value="1" />
           <entry key="xml" value="1" />
         </counts>
@@ -63,7 +74,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="28" />
+          <entry key="JAVA" value="33" />
           <entry key="Manifest" value="1" />
           <entry key="PlantUML file" value="1" />
           <entry key="XML" value="1" />
@@ -71,13 +82,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6735" />
+          <entry key="java" value="7151" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6735" />
+          <entry key="JAVA" value="7151" />
           <entry key="PLAIN_TEXT" value="25" />
         </counts>
       </usages-collector>
@@ -88,8 +99,36 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AiMiniMax.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="336" column="53" selection-start-line="336" selection-start-column="53" selection-end-line="336" selection-end-column="53" />
+            <state relative-caret-position="360">
+              <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+              <folding>
+                <element signature="e#10212#10221#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+              <folding>
+                <element signature="e#198#199#0" expanded="true" />
+                <element signature="e#236#237#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AiMiniMaxPrint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="e#1866#1875#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,11 +136,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+            <state relative-caret-position="705">
+              <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Testing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -118,8 +166,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/VierGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="45">
+              <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -138,6 +186,7 @@
     <findStrings>
       <find>AiMinimax</find>
       <find>de</find>
+      <find>minimax</find>
     </findStrings>
     <replaceStrings>
       <replace>AiMiniMax</replace>
@@ -151,23 +200,23 @@
       <list>
         <option value="$PROJECT_DIR$/src/AiMinimax.java" />
         <option value="$PROJECT_DIR$/src/VierArr.java" />
-        <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/GameAuto.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
-        <option value="$PROJECT_DIR$/src/Testing.java" />
-        <option value="$PROJECT_DIR$/src/AiMiniMaxPrint.java" />
         <option value="$PROJECT_DIR$/uml/VierLogik.puml" />
-        <option value="$PROJECT_DIR$/src/VierGame.java" />
         <option value="$PROJECT_DIR$/src/VierLogik.java" />
         <option value="$PROJECT_DIR$/src/GameGui.java" />
+        <option value="$PROJECT_DIR$/src/AiMiniMaxPrint.java" />
+        <option value="$PROJECT_DIR$/src/Testing.java" />
+        <option value="$PROJECT_DIR$/src/VierGame.java" />
+        <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/AiMiniMax.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1562" />
-    <option name="y" value="200" />
-    <option name="width" value="952" />
+    <option name="x" value="1171" />
+    <option name="y" value="225" />
+    <option name="width" value="948" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -176,6 +225,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,13 +235,15 @@
               <item name="viergewIt" type="b2602c69:ProjectViewProjectNode" />
               <item name="viergewIt" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="viergewIt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="viergewIt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,7 +252,7 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="viergewit" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557617561706" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557787213409" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -293,14 +347,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1021" y="199" width="1926" height="1057" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.14140876" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.14461046" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info active="true" id="simpleUML" order="7" visible="true" weight="0.32977587" />
       <window_info anchor="bottom" id="Version Control" order="0" />
@@ -325,6 +378,37 @@
       <window_info anchor="right" x="1027" y="228" width="1914" height="1022" id="UML design tool window" order="8" type="WINDOWED" weight="0.5357524" />
       <window_info anchor="right" id="PlantUML" order="9" weight="0.32977587" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.1430096" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info active="true" id="simpleUML" order="7" visible="true" weight="0.32977587" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.32938644" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.39935413" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.32938644" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32938644" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" x="1027" y="228" width="1914" height="1022" id="UML design tool window" order="8" type="WINDOWED" weight="0.5357524" />
+      <window_info anchor="right" id="PlantUML" order="9" weight="0.32977587" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -363,45 +447,10 @@
     <entry file="file://$PROJECT_DIR$/src/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/GameAuto.java" />
     <entry file="file://$PROJECT_DIR$/uml/VierLogik.puml" />
-    <entry file="file://$PROJECT_DIR$/src/AiMiniMaxPrint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Testing.java">
+    <entry file="file://$PROJECT_DIR$/src/VierGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AiMiniMax.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="336" column="53" selection-start-line="336" selection-start-column="53" selection-end-line="336" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -412,10 +461,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/VierGame.java">
+    <entry file="file://$PROJECT_DIR$/src/Testing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        <state relative-caret-position="240">
+          <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AiMiniMaxPrint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#1866#1875#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding>
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AiMiniMax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <folding>
+            <element signature="e#10212#10221#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

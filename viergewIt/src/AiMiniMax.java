@@ -11,6 +11,12 @@ class AiMiniMax//implementation of the Minimax-KI
     private final int h;//height
     private final int deepness;//searching deep
 
+    /**
+     * @param turn turn of connect four game
+     * @param history history of fields set on
+     * @param w width
+     * @param h height
+     */
     AiMiniMax(int turn,ArrayList<Integer> history,int w,int h)
     {
         this.turn=turn;
@@ -19,6 +25,7 @@ class AiMiniMax//implementation of the Minimax-KI
         this.h=h;
         int deep=7;
         switch(w)//decision based on simulations
+                //first for time<10 secs on my machine
         {
             case 4:
                 switch(h)
@@ -148,7 +155,13 @@ class AiMiniMax//implementation of the Minimax-KI
         }
         deepness=deep;
     }
-
+    /**
+     * @param turn turn of connect four game
+     * @param history history of fields set on
+     * @param w width
+     * @param h height
+     * @param deep depth of minimax search
+     */
     AiMiniMax(int turn,ArrayList<Integer> history,int w,int h,int deep)//for simulations or exact values for deep
     {
         this.turn=turn;
@@ -240,11 +253,9 @@ class AiMiniMax//implementation of the Minimax-KI
         if(maximizingPlayer)//good for the AI so the maximum of the values
         {
             value = -deepness-1;//theoretical
-
             for(int i=0;i<w;i++)//for each field
             {
                 test=recreate(hist);//recreate the field of the game
-
                 if(test.setOn(i))//if set not possible: theoretical value
                 {
                     if(test.checkwinner()==-1)//next Turn interesting
@@ -253,7 +264,8 @@ class AiMiniMax//implementation of the Minimax-KI
                         {
                             value = Math.min(value, 0);
                         }
-                        else {
+                        else
+                        {
                             ArrayList<Integer> hist2 = (ArrayList<Integer>) hist.clone();
                             hist2.add(i);//add the number which was set on
                             value = Math.max(value, minimax(false, hist2, depth - 1));//false because after your turn is the opponent's turn

@@ -1,4 +1,8 @@
 import java.util.Scanner;
+
+/**
+ * console game version of connect four
+ */
 public class Game
 {
     private VierGame vier;

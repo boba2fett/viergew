@@ -14,7 +14,7 @@ public class Testing
                 a.aiTurn();
                 final long timeEnd = System.currentTimeMillis();
                 double time=(timeEnd - timeStart)/1000.0;
-                System.out.println("("+d+","+time+")");
+                System.out.println("("+d+","+time+")");//in LaTeX format
             }
         }
     }

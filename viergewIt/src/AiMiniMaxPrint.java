@@ -1,4 +1,8 @@
 import java.util.*;
+/**
+ * Class for the AI of the connect four game with output on console
+ * (nothing very different)
+ */
 class AiMiniMaxPrint//implementation of the Minimax-KI
 {
     private final int turn;//needed for choosing player
