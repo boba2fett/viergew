@@ -1,4 +1,5 @@
 	\documentclass[12pt,a4paper]{article}
+	\addtolength{\footskip}{-1cm}
 	\usepackage[a4paper, left=3.5cm, right=2cm, top=2.5cm, bottom=1.2cm]{geometry}
 	\usepackage[utf8]{inputenc}
 	\usepackage[onehalfspacing]{setspace}
@@ -18,6 +19,7 @@
 
 	\title{Vier Gewinnt}
 	\author{Florian Tünte}
+	%
 	
 	\usepackage[onehalfspacing]{setspace}
 	\def\code#1{\texttt{#1}}
@@ -128,7 +130,7 @@
 \end{figure}
 \newpage
 	\subsection{Das Programm}
-	Wie startet man das Programm? Wenn java installiert ist, sollte ein Doppelklick auf die jar-Datei genügen. Andernfalls muss java noch installiert werden.\footnote{\url{https://www.java.com/de/download/manual.jsp} \space{} Empfohlen: java 8} Die jar-Datei ist direkt im \code{viergew} Verzeichnis zu finden. Die grafische Oberfläche öffnet sich und man hat die Gelegenheit sich für eine Spielfeldgröße zu entscheiden. Danach muss man auswählen, ob der Computer die Rolle des Anfangenden übernimmt oder nicht, oder ob man lieber zu zweit spielt.\\
+	Wie startet man das Programm? Wenn java installiert ist, sollte ein Doppelklick auf die jar-Datei genügen. Andernfalls muss java noch installiert werden.\footnote{https://www.java.com/de/download/manual.jsp \space{} Empfohlen: java 8} Die jar-Datei ist direkt im \code{viergew} Verzeichnis zu finden. Die grafische Oberfläche öffnet sich und man hat die Gelegenheit sich für eine Spielfeldgröße zu entscheiden. Danach muss man auswählen, ob der Computer die Rolle des Anfangenden übernimmt oder nicht, oder ob man lieber zu zweit spielt.\\
 	\section{Die KI (künstliche Intelligenz) des Vier Gewinnt Spiels}
 	Dieser Abschnitt befasst sich mit der hier implementierten KI, sowie dem Minimax-Algorithmus, der ihr zugrunde liegt. Es wird anhand von Beispielen erläutert. Ebenso gibt es Ausführungen über die Effizienz und die Schwächen der KI.\\
 	\subsection{Taktik der KI}
@@ -143,7 +145,7 @@
 		\label{fig:w-h-viergew}
 		(Tromp, John  \glqq John's Connect Four Playground\grqq{} http://tromp.github.io/c4/c4.html Stand: 01.05.2019)
 	\end{figure}
-\newpage
+	\\\\\\
 	\subsection{Schwächen}
 	Theoretisch sind der KI mit dem Minimax-Algorithmus nur Grenzen durch die Rechenleistung des Computers bzw. die Tiefe der Simulation gesetzt.
 	
@@ -572,7 +574,7 @@ child{
 	\subsection{Aktueller Stand}
 	Das heutige Leben wäre anders, wenn man auf künstliche Intelligenz verzichten würde. Das mag naheliegend sein bei Google Übersetzer oder anderer Sprachverarbeitung. Aber auch bei Verkehrsmitteln, wie Flugzeugen wird auf KI gesetzt. Man müsse also, um auf KI zu verzichten, mit einer Kutsche fahren (Kersting, Pia \glqq Künstliche Intelligenz (KI): Der aktuelle Stand der Technik\grqq{} https://lead-conduct.de/2017/11/21/kuenstliche-intelligenz-ki-der-aktuelle-stand-der-technik/ Stand:11.05.2019).
 	Es sollte aber im Blick gehalten werden, dass KI unser Leben deutlich vereinfachen kann. So wurde schon 2018 bei der Google I/O demonstriert, wie es aussehen könnte, wenn der Google Assistant einen Termin für seinen Nutzer ausmacht (Engelien, Marco \glqq Googles Assistant kann bald euren Friseur anrufen und einen Termin machen\grqq{} https://curved.de/news/bei-anruf-google-der-assistant-macht-bald-termine-fuer-euch-ab-605280 Stand: 11.05.2019).
-	Auch die Verfügbarkeit von Bibliotheken und Tutorials für KI oder ML ist hilfreich. So gibt es beispielsweise das von Google entwickelte open-source tensorflow Framework \footnote{\url{https://github.com/tensorflow/tensorflow}}, aber auch die Tutorials werden immer besser. Es gibt ein Spiel in dem man durch das Erlernen von ML gegen Außerirdische ankommen muss. Es befindet sich noch in der Alpha, ist aber ein guter Einstieg für python und ML, unter anderem mit verschiedenen python Bibliotheken, wie NumPy oder pandas.\footnote{\url{https://ml-scifi.com/}}
+	Auch die Verfügbarkeit von Bibliotheken und Tutorials für KI oder ML ist hilfreich. So gibt es beispielsweise das von Google entwickelte open-source tensorflow Framework \footnote{https://github.com/tensorflow/tensorflow}, aber auch die Tutorials werden immer besser. Es gibt ein Spiel in dem man durch das Erlernen von ML gegen Außerirdische ankommen muss. Es befindet sich noch in der Alpha, ist aber ein guter Einstieg für python und ML, unter anderem mit verschiedenen python Bibliotheken, wie NumPy oder pandas.\footnote{https://ml-scifi.com}
 	\subsection{Ausblick}
 	Im Folgenden werde ich darauf eingehen, was in der Zukunft noch auf uns zukommen könnte bzw. was jetzt schon möglich ist. Ein gutes Beispiel für die Ängste der Menschen liefern Filme mit alternativen Welten, die unserer Welt ähneln. Als erstes Beispiel für eine lernende KI ist natürlich der Film \textit{Wargames} zu nennen. Darin erkennt die KI, dass Tic-Tac-Toe spielen immer nur im Unentschieden endet und überträgt dies auf einen thermonuklearen Krieg, in dem es auch keine Gewinner oder Verlierer gibt. Auch der Film \textit{I Robot} und die \textit{Terminator} Reihe spielen auf die große Angst der Menschen an, dass sich Maschinen gegen uns wenden werden. Auch im Film \textit{Matrix} scheint dies so zu sein, jedoch sollte hier auch die Vorgeschichte beachtet werden, in der die Menschen die Maschinen ablehnten. Es gibt auch andere Vertreter, in denen KI immer wieder auftaucht. In Spielen ist die Erzeugung von NPCs (nicht spielbarer Charakter) schon immer wichtig gewesen. Bei Brettspielen ist es eventuell noch möglich etwas zu simulieren, aber bei Shootern ist dies schon weniger möglich, so lassen manche Studios lieber die Mitstreiter verschwinden, als das sie eine wichtige Rolle im Kampf bekommen, weil sie sowieso nur im Weg stünden. Mit den jetzigen Möglichkeiten des ML könnten solche Dinge immer leichter umgangen werden.\\
 	Ich denke im Allgemeinen entwickelt sich die KI zu unserem Nutzen. Auf die Gesetze der Robotik zurückgreifen wäre vielleicht eine Möglichkeit die Angst der Menschen zu mildern, aber es ist nur schwer abzuschätzen, ob KI uns irgendwann ersetzen wird oder nicht. Ob sie sich gegen uns auflehnen wird oder ob sie nur zu unserem Nutzen existieren wird ist ebenfalls fraglich. Die Gesetze der Robotik sind:\\
@@ -584,7 +586,7 @@ child{
 	Sobald Quantencomputer und KI miteinander verbunden werden, muss sicherlich nochmal intensiver über die Gefahren und Nutzen nachgedacht und abgewägt werden.
 	\newpage
 	\section{Fazit}
-	Am Ende der Facharbeit möchte ich noch einmal erwähnen, dass es immer eine Bereicherung ist mit \LaTeX{}\footnote{\url{https://www.latex-project.org/}} einen Text zu schreiben und ich den Erfindern sehr dafür danke. Es ist immer wieder eindrucksvoll, was mit \LaTeX{} alles möglich ist, wie die Baumdiagramme und der Graph. Die Klassendiagramme wurden erstellt mit dem Programm \glqq Umbrello\grqq{}\footnote{\url{https://umbrello.kde.org/}}. Des Weiteren habe ich nach dem komplette Entwicklungsprozess noch \textit{javadoc} erstellt. Die Dokumentation ist genauso wie der Quellcode und die Kommentare in Englisch gehalten, da dies auch bei deutschen Software Unternehmen so gehandhabt wird und jeder Quelltext, der auf Github ist auch für eine möglichst große Anzahl an Personen zur Verfügung stehen sollte. Die dokumentation ist zu finden unter \code{/viergew/doc/}. Ich denke das faszinierende am Programmieren ist das Experimentieren und das niemals endgültig fertig sein mit etwas. Dieses Projekt hat mir außerdem noch einmal gezeigt, wie wichtig Tests sind. So fiel mir ein gravierender Fehler in der KI erst auf, als meine Schwester das Programm testete. Die KI dachte, dass sie weniger Felder zur Verfügung habe und nutzte nicht alle Möglichkeiten.\\
+	Am Ende der Facharbeit möchte ich noch einmal erwähnen, dass es immer eine Bereicherung ist mit \LaTeX{}\footnote{https://www.latex-project.org/} einen Text zu schreiben und ich den Erfindern sehr dafür danke. Es ist immer wieder eindrucksvoll, was mit \LaTeX{} alles möglich ist, wie die Baumdiagramme und der Graph. Die Klassendiagramme wurden erstellt mit dem Programm \glqq Umbrello\grqq{}\footnote{https://umbrello.kde.org/}. Des Weiteren habe ich nach dem komplette Entwicklungsprozess noch \textit{javadoc} erstellt. Die Dokumentation ist genauso wie der Quellcode und die Kommentare in Englisch gehalten, da dies auch bei deutschen Software Unternehmen so gehandhabt wird und jeder Quelltext, der auf Github ist auch für eine möglichst große Anzahl an Personen zur Verfügung stehen sollte. Die dokumentation ist zu finden unter \code{/viergew/doc/}. Ich denke das faszinierende am Programmieren ist das Experimentieren und das niemals endgültig fertig sein mit etwas. Dieses Projekt hat mir außerdem noch einmal gezeigt, wie wichtig Tests sind. So fiel mir ein gravierender Fehler in der KI erst auf, als meine Schwester das Programm testete. Die KI dachte, dass sie weniger Felder zur Verfügung habe und nutzte nicht alle Möglichkeiten.\\
 	Ich denke KI ist eine große Möglichkeit für die Weiterentwicklung der Menschheit und ich werde mich auch noch weiterhin damit beschäftigen, da dieser Bereich in den letzten Jahren ziemlich zugelegt hat und auch noch wachsen wird.
 	\newpage
 	\section{Quellen-/ Literaturverzeichnis}

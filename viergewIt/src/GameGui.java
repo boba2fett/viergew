@@ -25,7 +25,8 @@ public class GameGui extends JFrame {
 
     private JButton[][] fields;
 
-    //private JButton player0 = new JButton("0 Spieler");
+    private boolean netgame=false;
+    private JButton network = new JButton("Netzwerk");
     private JButton player1ki1 = new JButton("1 Spieler KI ist 1");
     private JButton player1ki2 = new JButton("1 Spieler KI ist 2");
     private JButton player2 = new JButton("2 Spieler");//buttons for decisions
@@ -87,8 +88,8 @@ public class GameGui extends JFrame {
         }
         mainPanel.add(menu, BorderLayout.NORTH);
 
-        //player0.addActionListener(new myActionListener());//playerCount
-        player1ki1.addActionListener(new myActionListener());
+        network.addActionListener(new myActionListener());
+        player1ki1.addActionListener(new myActionListener());//playerCount
         player1ki2.addActionListener(new myActionListener());
         player2.addActionListener(new myActionListener());
 
@@ -147,7 +148,7 @@ public class GameGui extends JFrame {
         }
 
         resetMenu();
-        //menu.add(player0);
+        menu.add(network);
         menu.add(player1ki1);                //Add buttons to menu
         menu.add(player1ki2);
         menu.add(player2);
@@ -160,6 +161,11 @@ public class GameGui extends JFrame {
             if(a.getSource()==reset)
             {
                 reset();
+            }
+
+            if(a.getSource()==network)
+            {
+                netgame=true;
             }
 
             if(a.getSource()==again)
@@ -231,6 +237,7 @@ public class GameGui extends JFrame {
         menu.setPreferredSize(new Dimension(500, 500));
         fields=new JButton[w][h];
 
+        netgame=false;
         for (int y = 0;y < h; y++)                //Create grid
         {
             for (int x = 0; x < w; x++)
@@ -374,5 +381,10 @@ public class GameGui extends JFrame {
         {
                 buttons[arr[i][0]][arr[i][1]].setBackground(Color.YELLOW);
         }
+    }
+
+    private void netgame()
+    {
+
     }
 }
