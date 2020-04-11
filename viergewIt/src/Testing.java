@@ -10,7 +10,7 @@ public class Testing
             for(int d=1;d<10;d++)
             {
                 final long timeStart = System.currentTimeMillis();
-                AiMiniMax a=new AiMiniMax(0,new ArrayList<Integer>(),w,h,d);
+                AiMiniMax a=new AiMiniMax(new int[w][h],0,d);
                 a.aiTurn();
                 final long timeEnd = System.currentTimeMillis();
                 double time=(timeEnd - timeStart)/1000.0;

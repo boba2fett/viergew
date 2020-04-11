@@ -3,171 +3,29 @@ import java.util.*;
 /**
  * Class for the AI of the connect four game
  */
-class AiMiniMax//implementation of the Minimax-KI
+class AiMiniMax extends VierLogik//implementation of the Minimax-KI
 {
     private final int turn;//needed for choosing player
-    private final ArrayList<Integer> history;//needed for recreation
-    private final int w;//width
-    private final int h;//height
+    private final int[][]game;
     private final int deepness;//searching deep
-
     /**
      * @param turn turn of connect four game
-     * @param history history of fields set on
-     * @param w width
-     * @param h height
      */
-    AiMiniMax(int turn,ArrayList<Integer> history,int w,int h)
+    AiMiniMax(int[][]game,int turn)
     {
         this.turn=turn;
-        this.history=history;
-        this.w=w;
-        this.h=h;
-        int deep=7;
-        switch(w)//decision based on simulations
-                //first for time<10 secs on my machine
-        {
-            case 4:
-                switch(h)
-                {
-                    case 4:
-                        deep=11;
-                        break;
-                    case 5:
-                        deep=10;
-                        break;
-                    case 6:
-                        deep=10;
-                        break;
-                    case 7:
-                        deep=10;
-                        break;
-                    case 8:
-                        deep=10;
-                        break;
-                    case 9:
-                        deep=10;
-                        break;
-
-                }
-                break;
-            case 5:
-                switch(h)
-                {
-                    case 4:
-                        deep=9;
-                        break;
-                    case 5:
-                        deep=9;
-                        break;
-                    case 6:
-                        deep=9;
-                        break;
-                    case 7:
-                        deep=8;
-                        break;
-                    case 8:
-                        deep=8;
-                        break;
-                    case 9:
-                        deep=8;
-                        break;
-
-                }
-                break;
-            case 6:
-                switch(h)
-                {
-                    case 4:
-                        deep=8;
-                        break;
-                    case 5:
-                        deep=8;
-                        break;
-                    case 6:
-                        deep=7;
-                        break;
-                    case 7:
-                        deep=7;
-                        break;
-                    case 8:
-                        deep=7;
-                        break;
-                    case 9:
-                        deep=7;
-                        break;
-
-                }
-                break;
-            case 7:
-                switch(h)
-                {
-                    case 4:
-                        deep=7;
-                        break;
-                    case 5:
-                        deep=7;
-                        break;
-                    case 6:
-                        deep=7;
-                        break;
-                    case 7:
-                        deep=7;
-                        break;
-                    case 8:
-                        deep=7;
-                        break;
-                    case 9:
-                        deep=7;
-                        break;
-
-                }
-                break;
-            case 8:
-                deep=6;
-                /*switch(h)
-                {
-                    case 4:
-                        deep=6;
-                        break;
-                    case 5:
-                        deep=6;
-                        break;
-                    case 6:
-                        deep=6;
-                        break;
-                    case 7:
-                        deep=6;
-                        break;
-                    case 8:
-                        deep=6;
-                        break;
-                    case 9:
-                        deep=6;
-                        break;
-
-                }*/
-                break;
-            case 9:
-                deep=6;
-                break;
-
-        }
-        deepness=deep;
+        this.game=game;
+        double deep=5+(81-game.length*game[0].length)/16.0;
+        deepness=(int)deep;
     }
     /**
      * @param turn turn of connect four game
-     * @param history history of fields set on
-     * @param w width
-     * @param h height
      * @param deep depth of minimax search
      */
-    AiMiniMax(int turn,ArrayList<Integer> history,int w,int h,int deep)//for simulations or exact values for deep
+    AiMiniMax(int[][]game,int turn,int deep)//for simulations or exact values for deep
     {
+        this.game=game;
         this.turn=turn;
-        this.history=history;
-        this.w=w;
-        this.h=h;
         deepness=deep;
     }
 
@@ -177,45 +35,12 @@ class AiMiniMax//implementation of the Minimax-KI
      */
     private boolean legal(int further)//set On further possible when recreated
     {
-        VierLogik vier=new VierLogik(w,h);
-        for (int num : history)
-        {
-            vier.setOn(num);
-        }
-        return vier.setOn(further);
+        return setPos(game,further)!=-1;
     }
 
-    /**
-     * @param further History of Fields set on
-     * @return Vierlogik Object with history+further
-     */
-    private VierLogik recreate(ArrayList<Integer> further)//recreate a Game with addition of the turns in further
+    private boolean legal(int[][]g,int further)//set On further possible when recreated
     {
-        VierLogik vier=new VierLogik(w,h);
-        for (int num : history)
-        {
-            vier.setOn(num);
-        }
-        for (int num : further)
-        {
-            vier.setOn(num);
-        }
-        return vier;
-    }
-    /**
-     * @param further Field to set on for the VierLogik object
-     * @return Vierlogik Object with history+further
-     */
-    private VierLogik recreate(int further)//recreate a Game with addition of further
-    {
-        VierLogik vier=new VierLogik(w,h);
-        for (int num : history)
-        {
-            vier.setOn(num);
-        }
-        vier.setOn(further);
-
-        return vier;
+        return setPos(g,further)!=-1;
     }
 
     /**
@@ -224,7 +49,7 @@ class AiMiniMax//implementation of the Minimax-KI
     private ArrayList<Integer> possible()//should never be used, but in case...
     {
         ArrayList<Integer> poss=new ArrayList<Integer>();
-        for(int i=0;i<w;i++)
+        for(int i=0;i<game.length;i++)
         {
             if(legal(i))
             {
@@ -234,13 +59,25 @@ class AiMiniMax//implementation of the Minimax-KI
         return poss;
     }
 
+    int[][] copy(int[][] g)
+    {
+        int[][] newg=new int[g.length][g[0].length];
+        for(int i=0; i<g.length; i++)
+        {
+            for (int j = 0; j < g[0].length; j++)
+            {
+                newg[i][j] = g[i][j];
+            }
+        }
+        return newg;
+    }
+
     /**
      * @param maximizingPlayer max or min round
-     * @param hist history for the recursion
      * @param depth depth of the search
      * @return evaluated value
      */
-    private int minimax(boolean maximizingPlayer, ArrayList<Integer> hist, int depth)//main minimax-algorithm
+    private int minimax(boolean maximizingPlayer, int[][] game, int depth)//main minimax-algorithm
     {
         if(depth==0)//max deepness is 0 for a tie
         {
@@ -249,16 +86,16 @@ class AiMiniMax//implementation of the Minimax-KI
         int value;
         final int sp=turn%2+1;//player whom is the AI
         final int gsp=(1+turn)%2+1;//opposite player
-        VierLogik test;//for simulation
+        //VierLogik test;//for simulation
         if(maximizingPlayer)//good for the AI so the maximum of the values
         {
             value = -deepness-1;//theoretical
-            for(int i=0;i<w;i++)//for each field
+            for(int i=0;i<game.length;i++)//for each field
             {
-                test=recreate(hist);//recreate the field of the game
-                if(test.setOn(i))//if set not possible: theoretical value
+                try//if set not possible: theoretical value
                 {
-                    if(test.checkwinner()==-1)//next Turn interesting
+                    int[][] testGame=setOn(copy(game),turn+deepness-depth+1,i);
+                    if(checkwinner(testGame)==-1)//next Turn interesting
                     {
                         if(depth-1==0)
                         {
@@ -266,61 +103,60 @@ class AiMiniMax//implementation of the Minimax-KI
                         }
                         else
                         {
-                            ArrayList<Integer> hist2 = (ArrayList<Integer>) hist.clone();
-                            hist2.add(i);//add the number which was set on
-                            value = Math.max(value, minimax(false, hist2, depth - 1));//false because after your turn is the opponent's turn
+                            value = Math.max(value, minimax(false, testGame, depth - 1));//false because after your turn is the opponent's turn
                             //depth-1 to make it end sometime
                         }
                     }
-                    if(test.checkwinner()==0)//tie
+                    if(checkwinner(testGame)==0)//tie
                     {
                         value = Math.max(value, 0);
                     }
-                    if(test.checkwinner()==sp)//win
+                    if(checkwinner(testGame)==sp)//win
                     {
                         return depth;
                     }
-                    if(test.checkwinner()==gsp)//defeat (should never be the case)
+                    if(checkwinner(testGame)==gsp)//defeat (should never be the case)
                     {
                         value = Math.max(value, -depth);
                     }
                 }
+                catch(NoFreeFieldException e){}
+
             }
         }
         else//not good: perfect turn for opponent
         {
             value = deepness+1;//theoretical
-            for(int i=0;i<w;i++)//for each field
+            for(int i=0;i<game.length;i++)//for each field
             {
-                test=recreate(hist);//recreate the field of the game
-                if(test.setOn(i))//if set not possible: theoretical value
+                try//if set not possible: theoretical value
                 {
-                    if(test.checkwinner()==-1)//next Turn interesting
+                    int[][] testGame=setOn(copy(game),turn+deepness-depth+1,i);
+                    if(checkwinner(testGame)==-1)//next Turn interesting
                     {
                         if(depth-1==0)
                         {
                             value = Math.min(value, 0);
                         }
                         else {
-                            ArrayList<Integer> hist2 = (ArrayList<Integer>) hist.clone();
-                            hist2.add(i);//add the number which was set on
-                            value = Math.min(value, minimax(true, hist2, depth - 1));//true because after that is your turn
+                            value = Math.min(value, minimax(true, testGame, depth - 1));//true because after that is your turn
                             //depth-1 to make it end sometime
                         }
                     }
-                    if(test.checkwinner()==0)//tie
+                    if(checkwinner(testGame)==0)//tie
                     {
                         value = Math.min(value, 0);
                     }
-                    if(test.checkwinner()==sp)// win (should never be the case)
+                    if(checkwinner(testGame)==sp)// win (should never be the case)
                     {
                         value = Math.min(value, depth);
                     }
-                    if(test.checkwinner()==gsp)//defeat
+                    if(checkwinner(testGame)==gsp)//defeat
                     {
                         return -depth;
                     }
                 }
+                catch(NoFreeFieldException e){}
             }
         }
         return value;//evaluated value for game situation
@@ -332,21 +168,28 @@ class AiMiniMax//implementation of the Minimax-KI
      */
     int aiTurn()//only method to be used from outside
     {
-        int[]eval=new int[w];//store the values for setting on field 0 to w-1
-        boolean[]use=new boolean[w];//true: use value in eval
+        int[]eval=new int[game.length];//store the values for setting on field 0 to w-1
+        boolean[]use=new boolean[game.length];//true: use value in eval
         //false: don't use value in eval
-        for(int j=0;j<w;j++)
+        for(int j=0;j<game.length;j++)
         {
-            if(recreate(j).checkwinner()!=-1)//instant win (checkwinner should never be the opposite player)
+            try
             {
-                return j;
+                if (checkwinner(setOn(copy(game), turn, j)) != -1)//instant win (checkwinner should never be the opposite player)
+                {
+                    return j;
+                }
             }
+            catch(NoFreeFieldException e){}
+
             use[j]=legal(j);//decide whether to use or not
             if(use[j])
             {
-                ArrayList<Integer> hist=new ArrayList<Integer>();
-                hist.add(j);//first entry to add to recreations
-                eval[j]=minimax(false,hist,deepness);//using minimax to assign value to each possible field to set on
+                try
+                {
+                    eval[j] = minimax(false, setOn(copy(game), turn, j), deepness);//using minimax to assign value to each possible field to set on
+                }
+                catch(NoFreeFieldException e){}
             }
         }
 
@@ -356,7 +199,7 @@ class AiMiniMax//implementation of the Minimax-KI
             //values below 0 are a win of the opposite
             //the deeper the faster the defeat
         {
-            for(int j=0;j<w;j++)
+            for(int j=0;j<game.length;j++)
             {
                 if(use[j]&&eval[j]==i)
                 {
