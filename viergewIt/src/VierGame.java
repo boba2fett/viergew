@@ -7,9 +7,8 @@ public class VierGame extends VierLogik
 {
     int game[][];
     int turn=0;
-    /**
-     * History of turns made
-     */
+    AiMiniMaxSave a=new AiMiniMaxSave();
+    int last;
 
     VierGame(int w,int h)
     {
@@ -37,6 +36,7 @@ public class VierGame extends VierLogik
         {
             game[num][pos] = turn % 2 + 1;
             turn++;
+            last=num;
             return true;
         }
         return false;
@@ -63,8 +63,8 @@ public class VierGame extends VierLogik
     int ai()
     {
         //AiMiniMaxPrint a=new AiMiniMaxPrint(turn,(ArrayList<Integer>)history.clone(),game.length,game[0].length);//give AI all important information
-        AiMiniMax a=new AiMiniMax(game,turn);//give AI all important information
-        return a.aiTurn();
+        //give AI all important information
+        return a.init(game,turn,2,last);
     }
 
     /**

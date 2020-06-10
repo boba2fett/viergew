@@ -10,8 +10,8 @@ public class Testing
             for(int d=1;d<10;d++)
             {
                 final long timeStart = System.currentTimeMillis();
-                AiMiniMax a=new AiMiniMax(new int[w][h],0,d);
-                a.aiTurn();
+                AiMiniMaxSave a=new AiMiniMaxSave();
+                a.init(new int[w][h],0,d);
                 final long timeEnd = System.currentTimeMillis();
                 double time=(timeEnd - timeStart)/1000.0;
                 System.out.println("("+d+","+time+")");//in LaTeX format

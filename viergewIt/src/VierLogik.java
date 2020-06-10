@@ -12,16 +12,16 @@ public class VierLogik
      * @param num Field to set On
      * @return true Success
      */
-    public int[][] setOn(int game[][],int turn,int num)throws NoFreeFieldException//set on a given number
+    public boolean setOn(int game[][],int turn,int num)//throws NoFreeFieldException//set on a given number
     {
         int pos=setPos(game,num);
         if(pos!=-1)//if possible
         {
             game[num][pos] = turn % 2 + 1;
             //turn++;
-            return game;//it worked
+            return true;
         }
-        throw new NoFreeFieldException("Kein freies Feld");//it didn't worked
+        return false;
     }
     /**
      * @param num Field to set on

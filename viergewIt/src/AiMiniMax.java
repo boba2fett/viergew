@@ -92,35 +92,34 @@ class AiMiniMax extends VierLogik//implementation of the Minimax-KI
             value = -deepness-1;//theoretical
             for(int i=0;i<game.length;i++)//for each field
             {
-                try//if set not possible: theoretical value
+                int[][] testGame=copy(game);
+                if(setOn(testGame,turn+deepness-depth+1,i))
                 {
-                    int[][] testGame=setOn(copy(game),turn+deepness-depth+1,i);
-                    if(checkwinner(testGame)==-1)//next Turn interesting
+                    int win=checkwinner(testGame);
+                    if (win == -1)//next Turn interesting
                     {
-                        if(depth-1==0)
+                        if (depth - 1 == 0)
                         {
                             value = Math.min(value, 0);
-                        }
-                        else
+                        } else
                         {
                             value = Math.max(value, minimax(false, testGame, depth - 1));//false because after your turn is the opponent's turn
                             //depth-1 to make it end sometime
                         }
                     }
-                    if(checkwinner(testGame)==0)//tie
+                    if (win == 0)//tie
                     {
                         value = Math.max(value, 0);
                     }
-                    if(checkwinner(testGame)==sp)//win
+                    if (win == sp)//win
                     {
                         return depth;
                     }
-                    if(checkwinner(testGame)==gsp)//defeat (should never be the case)
+                    if (win == gsp)//defeat (should never be the case)
                     {
                         value = Math.max(value, -depth);
                     }
                 }
-                catch(NoFreeFieldException e){}
 
             }
         }
@@ -129,34 +128,32 @@ class AiMiniMax extends VierLogik//implementation of the Minimax-KI
             value = deepness+1;//theoretical
             for(int i=0;i<game.length;i++)//for each field
             {
-                try//if set not possible: theoretical value
+                int[][] testGame=copy(game);
+                setOn(testGame,turn+deepness-depth+1,i);
+                int win=checkwinner(testGame);
+                if(win==-1)//next Turn interesting
                 {
-                    int[][] testGame=setOn(copy(game),turn+deepness-depth+1,i);
-                    if(checkwinner(testGame)==-1)//next Turn interesting
-                    {
-                        if(depth-1==0)
-                        {
-                            value = Math.min(value, 0);
-                        }
-                        else {
-                            value = Math.min(value, minimax(true, testGame, depth - 1));//true because after that is your turn
-                            //depth-1 to make it end sometime
-                        }
-                    }
-                    if(checkwinner(testGame)==0)//tie
+                    if(depth-1==0)
                     {
                         value = Math.min(value, 0);
                     }
-                    if(checkwinner(testGame)==sp)// win (should never be the case)
-                    {
-                        value = Math.min(value, depth);
-                    }
-                    if(checkwinner(testGame)==gsp)//defeat
-                    {
-                        return -depth;
+                    else {
+                        value = Math.min(value, minimax(true, testGame, depth - 1));//true because after that is your turn
+                        //depth-1 to make it end sometime
                     }
                 }
-                catch(NoFreeFieldException e){}
+                if(win==0)//tie
+                {
+                    value = Math.min(value, 0);
+                }
+                if(win==sp)// win (should never be the case)
+                {
+                    value = Math.min(value, depth);
+                }
+                if(win==gsp)//defeat
+                {
+                    return -depth;
+                }
             }
         }
         return value;//evaluated value for game situation
@@ -173,23 +170,17 @@ class AiMiniMax extends VierLogik//implementation of the Minimax-KI
         //false: don't use value in eval
         for(int j=0;j<game.length;j++)
         {
-            try
+            int[][]test=copy(game);
+            if(setOn(test, turn, j))
             {
-                if (checkwinner(setOn(copy(game), turn, j)) != -1)//instant win (checkwinner should never be the opposite player)
+                if (checkwinner(test) != -1)//instant win (checkwinner should never be the opposite player)
                 {
                     return j;
                 }
-            }
-            catch(NoFreeFieldException e){}
 
-            use[j]=legal(j);//decide whether to use or not
-            if(use[j])
-            {
-                try
-                {
-                    eval[j] = minimax(false, setOn(copy(game), turn, j), deepness);//using minimax to assign value to each possible field to set on
-                }
-                catch(NoFreeFieldException e){}
+                test = copy(game);
+                setOn(test, turn, j);
+                eval[j] = minimax(false, test, deepness);//using minimax to assign value to each possible field to set on
             }
         }
 
